@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 13 19:24:38 2024
+# Process ID: 22476
+# Current directory: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1
+# Command line: vivado.exe -log bd_9a86_xpcs_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_9a86_xpcs_0.tcl
+# Log file: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1/bd_9a86_xpcs_0.vds
+# Journal file: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bd_9a86_xpcs_0.tcl -notrace

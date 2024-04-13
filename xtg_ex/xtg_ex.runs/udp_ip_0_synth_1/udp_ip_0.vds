@@ -1,0 +1,1553 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 13 16:34:43 2024
+# Process ID: 9952
+# Current directory: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/udp_ip_0_synth_1
+# Command line: vivado.exe -log udp_ip_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source udp_ip_0.tcl
+# Log file: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/udp_ip_0_synth_1/udp_ip_0.vds
+# Journal file: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/udp_ip_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source udp_ip_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/xilinx_prj/xilinx_Etherent/alinx_10g_udp/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tools/xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top udp_ip_0 -part xc7k325tffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13820 
+WARNING: [Synth 8-2611] redeclaration of ansi port arp_rcvd_src_ip_addr is not allowed [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/src/rx/arp_rx.vp:59]
+WARNING: [Synth 8-976] arp_rcvd_src_ip_addr has already been declared [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/src/rx/arp_rx.vp:59]
+WARNING: [Synth 8-2654] second declaration of arp_rcvd_src_ip_addr ignored [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/src/rx/arp_rx.vp:59]
+INFO: [Synth 8-994] arp_rcvd_src_ip_addr is declared here [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/src/rx/arp_rx.vp:49]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 867.867 ; gain = 182.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'udp_ip_0' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/synth/udp_ip_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'udp_top' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/src/udp_top.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'udp_top' (23#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/src/udp_top.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'udp_ip_0' (24#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/synth/udp_ip_0.v:56]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[63]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[62]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[61]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[60]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[59]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[58]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[57]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[56]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[55]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[54]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[53]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[52]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[51]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[50]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[49]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[48]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[47]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[46]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[45]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[44]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[43]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[42]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[41]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[40]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[39]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[38]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[37]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[36]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[35]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[34]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[33]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[32]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[31]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[30]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[29]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[28]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[27]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[26]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[25]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[24]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[23]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[22]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[21]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[20]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[19]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[18]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[17]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[16]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[15]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[14]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[13]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[12]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[11]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[10]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[9]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[8]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[7]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[6]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[5]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[4]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[3]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[2]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[1]
+WARNING: [Synth 8-3331] design stream_counter has unconnected port axis_tdata[0]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[7]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[6]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[5]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[4]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[3]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[2]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[1]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 950.078 ; gain = 265.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 950.078 ; gain = 265.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 950.078 ; gain = 265.113
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1109.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.300 . Memory (MB): peak = 1115.035 ; gain = 5.332
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1115.035 ; gain = 430.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1115.035 ; gain = 430.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1115.035 ; gain = 430.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'arp_state_reg' in module 'arp_cache'
+INFO: [Synth 8-802] inferred FSM for state register 'rcv_state_reg' in module 'frame_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'rcv_state_reg' in module 'arp_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'rcv_state_reg' in module 'ip_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'rcv_state_reg' in module 'udp_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'send_state_reg' in module 'udp_rx'
+INFO: [Synth 8-5546] ROM "last_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'ck_state_reg' in module 'udp_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'udp_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'stream_to_fifo'
+INFO: [Synth 8-802] inferred FSM for state register 'ck_state_reg' in module 'ip_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'pkg_state_reg' in module 'ip_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'frame_state_reg' in module 'ip_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ip_tx_mode'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'arp_tx'
+INFO: [Synth 8-5546] ROM "arp_tx_axis_tkeep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'stream_to_fifo__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'pkg_state_reg' in module 'frame_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'mac_state_reg' in module 'frame_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'frame_tx_mode'
+INFO: [Synth 8-802] inferred FSM for state register 'rcv_state_reg' in module 'icmp_reply'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                ARP_IDLE |                             0001 |                             0001
+             ARP_REQUEST |                             0100 |                             0100
+                ARP_WAIT |                             0010 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'arp_state_reg' in module 'arp_cache'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            MAC_RCV_ADDR |                            00001 |                            00001
+         MAC_RCV_ADDR_LT |                            00010 |                            00010
+            MAC_RCV_DATA |                            00100 |                            00100
+            MAC_RCV_GOOD |                            01000 |                            01000
+             MAC_RCV_BAD |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rcv_state_reg' in module 'frame_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+        ARP_RCV_WORD_1ST |                        000000001 |                        000000001
+        ARP_RCV_WORD_2ND |                        000000010 |                        000000010
+        ARP_RCV_WORD_3RD |                        000000100 |                        000000100
+        ARP_RCV_WORD_4TH |                        000001000 |                        000001000
+       ARP_RCV_WORD_DATA |                        000010000 |                        000010000
+            ARP_RCV_GOOD |                        000100000 |                        000100000
+         ARP_RCV_REQUEST |                        010000000 |                        010000000
+           ARP_RCV_REPLY |                        100000000 |                        100000000
+             ARP_RCV_BAD |                        001000000 |                        001000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rcv_state_reg' in module 'arp_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+         IP_RCV_WORD_1ST |                           000001 |                           000001
+         IP_RCV_WORD_2ND |                           000010 |                           000010
+         IP_RCV_WORD_3RD |                           000100 |                           000100
+        IP_RCV_WORD_DATA |                           001000 |                           001000
+             IP_RCV_GOOD |                           010000 |                           010000
+              IP_RCV_BAD |                           100000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rcv_state_reg' in module 'ip_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               SEND_IDLE |                               01 |                               01
+               SEND_DATA |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'send_state_reg' in module 'udp_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+               SEND_WAIT |                              010 |                               01
+               SEND_DATA |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'udp_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 CK_IDLE |                             0001 |                             0001
+        UDP_LENGTH_READY |                             0010 |                             0010
+            GEN_CHECKSUM |                             0100 |                             0100
+        GEN_CHECKSUM_END |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ck_state_reg' in module 'udp_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                  STREAM |                             0010 |                             0010
+              STREAM_END |                             0100 |                             0100
+         STREAM_END_WAIT |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'stream_to_fifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              FRAME_IDLE |                               01 |                               01
+         FRAME_SEND_DATA |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'frame_state_reg' in module 'ip_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 CK_IDLE |                             0001 |                             0001
+             CK_GEN_WAIT |                             0010 |                             0010
+                  CK_GEN |                             0100 |                             0100
+              CK_GEN_END |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ck_state_reg' in module 'ip_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                PKG_IDLE |                         00000001 |                         00000001
+                PKG_WAIT |                         00000010 |                         00000010
+            PKG_HEAD_1ST |                         00000100 |                         00000100
+            PKG_HEAD_2ND |                         00001000 |                         00001000
+            PKG_HEAD_3RD |                         00010000 |                         00010000
+                PKG_DATA |                         00100000 |                         00100000
+            PKG_LAST_ONE |                         01000000 |                         01000000
+                 PKG_END |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'pkg_state_reg' in module 'ip_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+                    ICMP |                              100 |                              100
+                     UDP |                              010 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'ip_tx_mode'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                        000000001 |                        000000001
+        ARP_REQUEST_WAIT |                        000000010 |                        000000010
+          ARP_REPLY_WAIT |                        000000100 |                        000000100
+              ARP_DATA_0 |                        000001000 |                        000001000
+              ARP_DATA_1 |                        000010000 |                        000010000
+              ARP_DATA_2 |                        000100000 |                        000100000
+              ARP_DATA_3 |                        001000000 |                        001000000
+                 ARP_END |                        100000000 |                        100000000
+             ARP_TIMEOUT |                        010000000 |                        010000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'arp_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                  STREAM |                             0010 |                             0010
+              STREAM_END |                             0100 |                             0100
+         STREAM_END_WAIT |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'stream_to_fifo__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                MAC_IDLE |                               01 |                               01
+           MAC_SEND_DATA |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'mac_state_reg' in module 'frame_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                PKG_IDLE |                          0000001 |                          0000001
+                PKG_WAIT |                          0000010 |                          0000010
+                PKG_ADDR |                          0000100 |                          0000100
+             PKG_ADDR_LT |                          0001000 |                          0001000
+                PKG_DATA |                          0010000 |                          0010000
+            PKG_LAST_ONE |                          0100000 |                          0100000
+                 PKG_END |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'pkg_state_reg' in module 'frame_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+                     ARP |                              010 |                              010
+                      IP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'frame_tx_mode'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+           ICMP_RCV_HEAD |                          0000001 |                          0000001
+           ICMP_RCV_DATA |                          0000010 |                          0000010
+           ICMP_RCV_GOOD |                          0000100 |                          0000100
+    ICMP_GOOD_FRAME_HEAD |                          0010000 |                          0010000
+         ICMP_GOOD_FRAME |                          0100000 |                          0100000
+            ICMP_RCV_BAD |                          0001000 |                          0001000
+          ICMP_BAD_FRAME |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rcv_state_reg' in module 'icmp_reply'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1115.035 ; gain = 430.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 84    
+	   2 Input     20 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 8     
+	   2 Input     17 Bit       Adders := 27    
+	   2 Input     16 Bit       Adders := 10    
+	   2 Input     11 Bit       Adders := 14    
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	               80 Bit    Registers := 2     
+	               74 Bit    Registers := 9     
+	               64 Bit    Registers := 30    
+	               56 Bit    Registers := 2     
+	               48 Bit    Registers := 8     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 41    
+	               20 Bit    Registers := 4     
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 6     
+	               17 Bit    Registers := 18    
+	               16 Bit    Registers := 31    
+	               11 Bit    Registers := 14    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 55    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 156   
++---RAMs : 
+	             148K Bit         RAMs := 6     
+	              80K Bit         RAMs := 1     
+	              18K Bit         RAMs := 1     
+	               2K Bit         RAMs := 1     
+	             1024 Bit         RAMs := 1     
+	               1K Bit         RAMs := 1     
+	              256 Bit         RAMs := 1     
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     74 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 12    
+	   3 Input     64 Bit        Muxes := 3     
+	   2 Input     48 Bit        Muxes := 3     
+	   3 Input     48 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 9     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 3     
+	   9 Input     32 Bit        Muxes := 9     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 3     
+	   2 Input     17 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   3 Input      9 Bit        Muxes := 1     
+	  10 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 31    
+	   4 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 5     
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 9     
+	   5 Input      8 Bit        Muxes := 9     
+	   6 Input      8 Bit        Muxes := 9     
+	   3 Input      7 Bit        Muxes := 6     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 22    
+	   8 Input      7 Bit        Muxes := 3     
+	   3 Input      6 Bit        Muxes := 8     
+	   7 Input      6 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 15    
+	   3 Input      5 Bit        Muxes := 7     
+	   6 Input      5 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 10    
+	   3 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 19    
+	   5 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 15    
+	   4 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 27    
+	   7 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 156   
+	   3 Input      1 Bit        Muxes := 14    
+	  10 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module arp_cache 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	               48 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 4     
+	   4 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module frame_rx 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 2     
+	               48 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 6     
+	   6 Input      5 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 7     
+Module frame_rx_mode 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 2     
+	               48 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 2     
+	   3 Input     48 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module arp_rx 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      9 Bit        Muxes := 1     
+	  10 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 8     
+Module ip_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     17 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 5     
+	               32 Bit    Registers := 8     
+	                8 Bit    Registers := 6     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 8     
+	   7 Input      6 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 1     
+Module ip_rx_mode 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module dpram 
+Detailed RTL Component Info : 
++---Registers : 
+	               74 Bit    Registers := 1     
++---RAMs : 
+	             148K Bit         RAMs := 1     
+Module sync_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module std_fwft_fifo 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module dpram__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               40 Bit    Registers := 1     
++---RAMs : 
+	              80K Bit         RAMs := 1     
+Module sync_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module std_fwft_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module udp_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 7     
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 9     
+	               32 Bit    Registers := 6     
+	               20 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 5     
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 10    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module stream_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dpram__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+Module sync_fifo__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module std_fwft_fifo__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module dpram__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module sync_fifo__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module std_fwft_fifo__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module udp_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 6     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 11    
+	               17 Bit    Registers := 5     
+	               16 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   9 Input     32 Bit        Muxes := 3     
+	   3 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 4     
+Module dpram__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
+Module sync_fifo__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module std_fwft_fifo__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module stream_to_fifo 
+Detailed RTL Component Info : 
++---Registers : 
+	               74 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     74 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module dpram__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---RAMs : 
+	               1K Bit         RAMs := 1     
+Module sync_fifo__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module std_fwft_fifo__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ip_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 6     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               20 Bit    Registers := 3     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 5     
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 12    
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 7     
+	   3 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 9     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module ip_tx_mode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module arp_tx 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  10 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module dpram__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---RAMs : 
+	              128 Bit         RAMs := 1     
+Module sync_fifo__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module std_fwft_fifo__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module stream_to_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               74 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     74 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module frame_tx 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 9     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 2     
+Module frame_tx_mode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module dpram__parameterized6 
+Detailed RTL Component Info : 
++---Registers : 
+	               74 Bit    Registers := 1     
++---RAMs : 
+	              18K Bit         RAMs := 1     
+Module sync_fifo__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module std_fwft_fifo__parameterized6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module icmp_reply 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 13    
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 6     
++---Registers : 
+	               64 Bit    Registers := 7     
+	               32 Bit    Registers := 9     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 3     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 6     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "checksum_tmp100" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "checksum_tmp80" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "stream_inst/last_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "stream_inst/last_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "check_out0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_in1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "arp_inst/arp_tx_axis_tkeep" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "frame_tx_mode_inst/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[7]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[6]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[5]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[4]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[3]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[2]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[1]
+WARNING: [Synth 8-3331] design arp_rx has unconnected port frame_rx_axis_tkeep[0]
+INFO: [Synth 8-4652] Swapped enable and write-enable on 5 RAM instances of RAM udp_data_fifo/fifo_inst/dpram_std/ram_reg to conserve power
+INFO: [Synth 8-5784] Optimized 7 bits of RAM "udp_length_fifo/fifo_inst/dpram_std/ram_reg" due to constant propagation. Old ram width 40 bits, new ram width 33 bits.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM udp_length_fifo/fifo_inst/dpram_std/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 5 RAM instances of RAM udp_data_fifo/fifo_inst/dpram_std/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 5 RAM instances of RAM ip_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 5 RAM instances of RAM pkg_fifo/fifo_inst/dpram_std/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 5 RAM instances of RAM frame_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 5 RAM instances of RAM pkg_fifo/fifo_inst/dpram_std/ram_reg to conserve power
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/udp_inst/\checksum_tmp8_reg[16] )
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[18]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[18]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[19]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[19]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[20]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[20]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[21]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[21]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[22]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[22]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[23]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[23]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[24]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[24]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[25]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[25]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[26]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[26]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[27]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[27]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[28]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[28]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[29]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[29]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[30]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[30]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp10_reg[31]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_tmp11_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/udp_inst/\checksum_tmp11_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/ip_inst/\checksum_tmp2_reg[16] )
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[8]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[9]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[10]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[11]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[12]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[13]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[14]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/ip_inst/checksum_tmp2_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/udp_inst/i_16/\stream_inst/stream_byte_cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/udp_inst/i_16/\stream_inst/stream_byte_cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/udp_inst/i_16/\stream_inst/stream_byte_cnt_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[31]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[30]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[29]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[28]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[27]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[26]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[25]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[24]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[23]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[22]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[21]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[20]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[19]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[18]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_reply_buf_dly_reg[17]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[8]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[17]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[18]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[19]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[20]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[21]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[22]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[23]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[24]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[25]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[26]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[27]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[28]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[29]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[30]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_dly_reg[31]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[9]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[10]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[11]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[12]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[13]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[14]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[15]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/icmp_reply_inst/checksum_tmp11_reg[16]' (FDR) to 'inst/udp_ip_inst/icmp_reply_inst/checksum_buf_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/ip_inst/i_17/\ip_stream_inst/stream_inst/stream_byte_cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/ip_inst/i_17/\ip_stream_inst/stream_inst/stream_byte_cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/ip_inst/i_17/\ip_stream_inst/stream_inst/stream_byte_cnt_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[17]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[18]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[17]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[19]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[20]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[21]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[22]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[23]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[24]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[25]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[26]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[27]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[28]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[29]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[30]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_dly_reg[31]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[18]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[19]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[20]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[21]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[22]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[23]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[24]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[25]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[26]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[27]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[28]' (FDRE) to 'inst/udp_ip_inst/frame_tx_top_inst/udp_inst/checksum_buf_reg[29]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/udp_inst/\checksum_buf_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/ip_inst/\ip_stream_inst/trans_type_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/ip_inst/\check_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/ip_rx_inst/\checksum_tmp4_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/cache_inst/\arp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_tx_top_inst/frame_inst/\frame_stream_inst/trans_type_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /\icmp_reply_inst/checksum_buf_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst/\checksum_buf_reg[17] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 1115.035 ; gain = 430.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-------------------------------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                      | RTL Object                                  | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst | udp_length_fifo/fifo_inst/dpram_std/ram_reg | 2 K x 40(READ_FIRST)   | W |   | 2 K x 40(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
+|dpram__parameterized1:                           | ram_reg                                     | 32 x 80(READ_FIRST)    | W |   | 32 x 80(WRITE_FIRST)   |   | R | Port A and B     | 1      | 1      | 
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|dpram__parameterized2:                           | ram_reg                                     | 32 x 32(READ_FIRST)    | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|dpram__parameterized4:                           | ram_reg                                     | 32 x 56(READ_FIRST)    | W |   | 32 x 56(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|dpram__parameterized6:                           | ram_reg                                     | 256 x 74(READ_FIRST)   | W |   | 256 x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
++-------------------------------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------------------------------------+----------------------------------------------------------------+-----------+----------------------+--------------+
+|Module Name                                     | RTL Object                                                     | Inference | Size (Depth x Width) | Primitives   | 
++------------------------------------------------+----------------------------------------------------------------+-----------+----------------------+--------------+
+|\inst/udp_ip_inst /frame_tx_top_inst/ip_inst    | ip_stream_inst/stream_byte_fifo/fifo_inst/dpram_std/ram_reg    | Implied   | 8 x 32               | RAM32M x 6   | 
+|\inst/udp_ip_inst /frame_tx_top_inst/frame_inst | frame_stream_inst/stream_byte_fifo/fifo_inst/dpram_std/ram_reg | Implied   | 8 x 16               | RAM32M x 3   | 
++------------------------------------------------+----------------------------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/i_0/udp_data_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/i_0/udp_data_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/i_0/udp_data_fifo/fifo_inst/dpram_std/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/i_0/udp_data_fifo/fifo_inst/dpram_std/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/i_0/udp_data_fifo/fifo_inst/dpram_std/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/i_4/udp_length_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/i_4/udp_length_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/i_0/udp_length_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/i_6/udp_data_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/i_6/udp_data_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/i_6/udp_data_fifo/fifo_inst/dpram_std/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/i_6/udp_data_fifo/fifo_inst/dpram_std/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/i_6/udp_data_fifo/fifo_inst/dpram_std/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/i_0/ip_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/i_0/ip_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/i_0/ip_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/i_26/pkg_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/i_26/pkg_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/i_26/pkg_fifo/fifo_inst/dpram_std/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/i_26/pkg_fifo/fifo_inst/dpram_std/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/i_26/pkg_fifo/fifo_inst/dpram_std/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/i_0/frame_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/i_0/frame_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/i_20/pkg_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/i_20/pkg_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/i_20/pkg_fifo/fifo_inst/dpram_std/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/i_20/pkg_fifo/fifo_inst/dpram_std/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/i_20/pkg_fifo/fifo_inst/dpram_std/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/icmp_reply_insti_0/icmp_reply_inst/icmp_data_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/icmp_reply_insti_0/icmp_reply_inst/icmp_data_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 1115.035 ; gain = 430.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1115.035 ; gain = 430.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-------------------------------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                      | RTL Object                                  | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|\inst/udp_ip_inst /frame_rx_top_inst/udp_rx_inst | udp_length_fifo/fifo_inst/dpram_std/ram_reg | 2 K x 40(READ_FIRST)   | W |   | 2 K x 40(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
+|dpram__parameterized1:                           | ram_reg                                     | 32 x 80(READ_FIRST)    | W |   | 32 x 80(WRITE_FIRST)   |   | R | Port A and B     | 1      | 1      | 
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|dpram__parameterized2:                           | ram_reg                                     | 32 x 32(READ_FIRST)    | W |   | 32 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|dpram__parameterized4:                           | ram_reg                                     | 32 x 56(READ_FIRST)    | W |   | 32 x 56(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|dpram:                                           | ram_reg                                     | 2 K x 74(READ_FIRST)   | W |   | 2 K x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|dpram__parameterized6:                           | ram_reg                                     | 256 x 74(READ_FIRST)   | W |   | 256 x 74(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
++-------------------------------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++------------------------------------------------+----------------------------------------------------------------+-----------+----------------------+--------------+
+|Module Name                                     | RTL Object                                                     | Inference | Size (Depth x Width) | Primitives   | 
++------------------------------------------------+----------------------------------------------------------------+-----------+----------------------+--------------+
+|\inst/udp_ip_inst /frame_tx_top_inst/ip_inst    | ip_stream_inst/stream_byte_fifo/fifo_inst/dpram_std/ram_reg    | Implied   | 8 x 32               | RAM32M x 6   | 
+|\inst/udp_ip_inst /frame_tx_top_inst/frame_inst | frame_stream_inst/stream_byte_fifo/fifo_inst/dpram_std/ram_reg | Implied   | 8 x 16               | RAM32M x 3   | 
++------------------------------------------------+----------------------------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/udp_length_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_rx_top_inst/udp_rx_inst/udp_length_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_length_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/ip_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/ip_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/ip_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/ip_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/frame_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/frame_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/frame_tx_top_inst/frame_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/dpram_std/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/dpram_std/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1142.727 ; gain = 457.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1148.305 ; gain = 463.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1148.305 ; gain = 463.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1148.305 ; gain = 463.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1148.305 ; gain = 463.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1148.328 ; gain = 463.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1148.328 ; gain = 463.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|alinx_udp_ip | frame_rx_top_inst/udp_rx_inst/shifter[5].udp_tusr_dly_reg[5]     | 7      | 3     | YES          | NO                 | YES               | 3      | 0       | 
+|alinx_udp_ip | frame_rx_top_inst/udp_rx_inst/shifter[6].udp_tkeep_dly_reg[6][7] | 8      | 72    | YES          | NO                 | YES               | 72     | 0       | 
+|alinx_udp_ip | icmp_reply_inst/shifter[4].icmp_tusr_dly_reg[4]                  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|alinx_udp_ip | icmp_reply_inst/shifter[5].icmp_tlast_dly_reg[5]                 | 6      | 74    | YES          | NO                 | YES               | 74     | 0       | 
++-------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   854|
+|2     |LUT1       |   125|
+|3     |LUT2       |  1985|
+|4     |LUT3       |   261|
+|5     |LUT4       |   600|
+|6     |LUT5       |   934|
+|7     |LUT6       |  1122|
+|8     |MUXF7      |     5|
+|9     |RAM32M     |     7|
+|10    |RAMB18E1   |     4|
+|11    |RAMB18E1_1 |     1|
+|12    |RAMB18E1_2 |     2|
+|13    |RAMB18E1_3 |     2|
+|14    |RAMB36E1   |    23|
+|15    |RAMB36E1_1 |     2|
+|16    |RAMB36E1_2 |     3|
+|17    |RAMB36E1_3 |     1|
+|18    |SRL16E     |   150|
+|19    |FDCE       |   235|
+|20    |FDPE       |    13|
+|21    |FDRE       |  4666|
+|22    |FDSE       |   135|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-------------------------------+------+
+|      |Instance                     |Module                         |Cells |
++------+-----------------------------+-------------------------------+------+
+|1     |top                          |                               | 11130|
+|2     |  inst                       |udp_top                        | 11130|
+|3     |    udp_ip_inst              |alinx_udp_ip                   | 11130|
+|4     |      frame_rx_top_inst      |frame_rx_top                   |  5315|
+|5     |        cache_inst           |arp_cache                      |   192|
+|6     |        arp_rx_inst          |arp_rx                         |   345|
+|7     |        frame_rx_inst        |frame_rx                       |   433|
+|8     |        frame_rx_mode_inst   |frame_rx_mode                  |   319|
+|9     |        ip_rx_inst           |ip_rx                          |  1166|
+|10    |        ip_rx_mode_inst      |ip_rx_mode                     |  1042|
+|11    |        udp_rx_inst          |udp_rx                         |  1818|
+|12    |          udp_data_fifo      |std_fwft_fifo_13               |   182|
+|13    |            fifo_inst        |sync_fifo_14                   |   181|
+|14    |              dpram_std      |dpram_15                       |    80|
+|15    |          udp_length_fifo    |std_fwft_fifo__parameterized0  |   135|
+|16    |            fifo_inst        |sync_fifo__parameterized0      |   130|
+|17    |              dpram_std      |dpram__parameterized0          |    30|
+|18    |      frame_tx_top_inst      |frame_tx_top                   |  4355|
+|19    |        arp_inst             |arp_tx                         |   248|
+|20    |        frame_inst           |frame_tx                       |   766|
+|21    |          frame_stream_inst  |stream_to_fifo__parameterized0 |   396|
+|22    |            stream_byte_fifo |std_fwft_fifo__parameterized5  |   102|
+|23    |              fifo_inst      |sync_fifo__parameterized5      |    98|
+|24    |                dpram_std    |dpram__parameterized5          |    21|
+|25    |            stream_data_fifo |std_fwft_fifo_10               |   208|
+|26    |              fifo_inst      |sync_fifo_11                   |   207|
+|27    |                dpram_std    |dpram_12                       |    71|
+|28    |          pkg_fifo           |std_fwft_fifo_7                |   224|
+|29    |            fifo_inst        |sync_fifo_8                    |   223|
+|30    |              dpram_std      |dpram_9                        |    82|
+|31    |        frame_tx_mode_inst   |frame_tx_mode                  |    55|
+|32    |        ip_inst              |ip_tx                          |  1390|
+|33    |          ip_head_fifo       |std_fwft_fifo__parameterized4  |   140|
+|34    |            fifo_inst        |sync_fifo__parameterized4      |   137|
+|35    |              dpram_std      |dpram__parameterized4          |    51|
+|36    |          ip_stream_inst     |stream_to_fifo                 |   435|
+|37    |            stream_byte_fifo |std_fwft_fifo__parameterized3  |   106|
+|38    |              fifo_inst      |sync_fifo__parameterized3      |   103|
+|39    |                dpram_std    |dpram__parameterized3          |    30|
+|40    |            stream_data_fifo |std_fwft_fifo_3                |   204|
+|41    |              fifo_inst      |sync_fifo_5                    |   203|
+|42    |                dpram_std    |dpram_6                        |    83|
+|43    |            stream_inst      |stream_counter_4               |    38|
+|44    |          pkg_fifo           |std_fwft_fifo_0                |   175|
+|45    |            fifo_inst        |sync_fifo_1                    |   174|
+|46    |              dpram_std      |dpram_2                        |    40|
+|47    |        ip_tx_mode_inst      |ip_tx_mode                     |   169|
+|48    |        udp_inst             |udp_tx                         |  1727|
+|49    |          stream_inst        |stream_counter                 |    46|
+|50    |          udp_data_fifo      |std_fwft_fifo                  |   143|
+|51    |            fifo_inst        |sync_fifo                      |   142|
+|52    |              dpram_std      |dpram                          |    20|
+|53    |          udp_length_fifo    |std_fwft_fifo__parameterized1  |    93|
+|54    |            fifo_inst        |sync_fifo__parameterized1      |    91|
+|55    |              dpram_std      |dpram__parameterized1          |     6|
+|56    |          udp_tx_checksum    |std_fwft_fifo__parameterized2  |    87|
+|57    |            fifo_inst        |sync_fifo__parameterized2      |    86|
+|58    |              dpram_std      |dpram__parameterized2          |     2|
+|59    |      icmp_reply_inst        |icmp_reply                     |  1459|
+|60    |        icmp_data_fifo       |std_fwft_fifo__parameterized6  |   169|
+|61    |          fifo_inst          |sync_fifo__parameterized6      |   163|
+|62    |            dpram_std        |dpram__parameterized6          |    80|
++------+-----------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 1148.328 ; gain = 463.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:46 . Memory (MB): peak = 1148.328 ; gain = 298.406
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1148.328 ; gain = 463.363
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 904 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1164.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+266 Infos, 84 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 1164.566 ; gain = 779.090
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1164.566 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/udp_ip_0_synth_1/udp_ip_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP udp_ip_0, cache-ID = 5a372f2802977dd0
+INFO: [Coretcl 2-1174] Renamed 61 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1164.566 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/udp_ip_0_synth_1/udp_ip_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file udp_ip_0_utilization_synth.rpt -pb udp_ip_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 13 16:36:05 2024...

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1713007664">
+  <File Type="PA-TCL" Name="udp_test.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="udp_test_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="udp_test_reports.tcl"/>
+  <File Type="RDS-RDS" Name="udp_test.vds"/>
+  <File Type="RDS-UTIL" Name="udp_test_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="udp_test_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="udp_test.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="udp_test_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="udp_test_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/ax_debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/ax_debounce.v"/>
+        <Attr Name="ImportTime" Val="1712996554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/axi_10g_ethernet_0_axi_lite_sm.v"/>
+        <Attr Name="ImportTime" Val="1712996557"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/axi_10g_ethernet_0_sync_reset.v"/>
+        <Attr Name="ImportTime" Val="1712996557"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/udp_read_write_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/udp_read_write_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1712996554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/udp_test.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/udp_test.v"/>
+        <Attr Name="ImportTime" Val="1712996555"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/i2c_master.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/i2c_master.vhd"/>
+        <Attr Name="ImportTime" Val="1712996558"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/si5338.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/si5338.vhd"/>
+        <Attr Name="ImportTime" Val="1712996558"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="udp_test"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_gen"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_10g_ethernet"/>
+  <BlockFileSet Type="BlockSrcs" Name="udp_ip_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="axis_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_9a86_xpcs_0"/>
+</GenRun>

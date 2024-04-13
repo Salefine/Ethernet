@@ -1,0 +1,739 @@
+
+*** Running vivado
+    with args -log udp_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source udp_test.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source udp_test.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/xilinx_prj/xilinx_Etherent/alinx_10g_udp/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tools/xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top udp_test -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18312 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 869.766 ; gain = 176.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'udp_test' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:32]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:73]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:74]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:75]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:76]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:77]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:79]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:80]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:81]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:82]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:83]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:86]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:87]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:88]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:89]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:90]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:92]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:93]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:94]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:95]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:96]
+INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_sync_reset' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:62]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:70]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:70]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:72]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:74]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:74]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:76]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:76]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:78]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:78]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:80]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_sync_reset' (1#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:62]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/clk_gen_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (2#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/clk_gen_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'udp_read_write_ctrl' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_read_write_ctrl.v:33]
+	Parameter IDLE bound to: 3'b001 
+	Parameter LOOPBACK bound to: 3'b010 
+	Parameter SPEED bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'axis_fifo' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/axis_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axis_fifo' (3#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/axis_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ax_debounce' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/ax_debounce.v:31]
+	Parameter N bound to: 32 - type: integer 
+	Parameter FREQ bound to: 50 - type: integer 
+	Parameter MAX_TIME bound to: 20 - type: integer 
+	Parameter TIMER_MAX_VAL bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ax_debounce' (4#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/ax_debounce.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'udp_read_write_ctrl' (5#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_read_write_ctrl.v:33]
+INFO: [Synth 8-6157] synthesizing module 'udp_ip_0' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/udp_ip_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'udp_ip_0' (6#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/udp_ip_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:67]
+	Parameter STARTUP bound to: 0 - type: integer 
+	Parameter RESET_MAC_TX bound to: 1 - type: integer 
+	Parameter RESET_MAC_RX bound to: 2 - type: integer 
+	Parameter MDIO_ADDR bound to: 3 - type: integer 
+	Parameter MDIO_RD bound to: 4 - type: integer 
+	Parameter MDIO_RD_1 bound to: 5 - type: integer 
+	Parameter MDIO_WR bound to: 6 - type: integer 
+	Parameter MDIO_ADDR_1 bound to: 7 - type: integer 
+	Parameter MDIO_ADDR_2 bound to: 8 - type: integer 
+	Parameter MDIO_POLL_CHECK bound to: 9 - type: integer 
+	Parameter MDIO_CHECK_DATA bound to: 10 - type: integer 
+	Parameter CONFIG_DONE bound to: 11 - type: integer 
+	Parameter MDIO_READ_PCS_RESET bound to: 12 - type: integer 
+	Parameter MDIO_READ_PCS_RESET_POLL bound to: 13 - type: integer 
+	Parameter MDIO_READ_PCS_RESET_READ bound to: 14 - type: integer 
+	Parameter MDIO_RESET_CHECK bound to: 15 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SET_DATA bound to: 1 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000010 
+	Parameter POLL bound to: 3 - type: integer 
+	Parameter READ bound to: 1 - type: integer 
+	Parameter WRITE bound to: 2 - type: integer 
+	Parameter DONE bound to: 3 - type: integer 
+	Parameter CONFIG_MANAGEMENT_ADDR bound to: 17'b00000010100000000 
+	Parameter RECEIVER_ADDR bound to: 17'b00000010000000100 
+	Parameter TRANSMITTER_ADDR bound to: 17'b00000010000001000 
+	Parameter MDIO_CONTROL bound to: 17'b00000010100000100 
+	Parameter MDIO_TX_DATA bound to: 17'b00000010100001000 
+	Parameter MDIO_RX_DATA bound to: 17'b00000010100001100 
+	Parameter MDIO_OP_ADDR bound to: 2'b00 
+	Parameter MDIO_OP_RD bound to: 2'b11 
+	Parameter MDIO_OP_RD_INCR bound to: 2'b10 
+	Parameter MDIO_OP_WR bound to: 2'b01 
+	Parameter PRT_ADDR bound to: 5'b00000 
+	Parameter DEV_ADDR bound to: 5'b00011 
+	Parameter PHY_CONTROL_REG bound to: 8'b00000000 
+	Parameter PHY_STATUS_REG bound to: 8'b00000001 
+	Parameter PHY_ABILITY_REG bound to: 8'b00000100 
+	Parameter PHY_1000BASET_CONTROL_REG bound to: 8'b00001001 
+INFO: [Synth 8-251] ** Note: Setting MDC Frequency to 10.4MHZ.... [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:327]
+INFO: [Synth 8-251] ** Note: Reseting MAC RX [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:335]
+INFO: [Synth 8-251] ** Note: Reseting MAC TX [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:350]
+INFO: [Synth 8-251] ** Note: Specified PCS control register address for 10GBASE-R [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:372]
+INFO: [Synth 8-251] ** Note: Issuing PCS reset [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:375]
+INFO: [Synth 8-251] ** Note: Set BASE-R control into PCS default [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:380]
+INFO: [Synth 8-251] ** Note: PCS RESET POLL [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:428]
+INFO: [Synth 8-251] ** Note: PCS RESET is cleared [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:430]
+INFO: [Synth 8-251] ** Note: Specified PCS control register address for 10GBASE-R [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:444]
+INFO: [Synth 8-251] ** Note: Set BASE-R control into PCS loopback  [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:448]
+INFO: [Synth 8-251] ** Note: Read PCS control [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:488]
+INFO: [Synth 8-251] ** Note: Specified status register 1 address for 10GBASE-R [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:511]
+INFO: [Synth 8-251] ** Note: Reading status register  [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:524]
+INFO: [Synth 8-251] ** Note: MDIO_POLL_CHECK [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:535]
+INFO: [Synth 8-251] ** Note: CONFIG_DONE, BASE-R is in lock [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:554]
+WARNING: [Synth 8-6014] Unused sequential element prev_axi_state_reg was removed.  [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:288]
+INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' (7#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:67]
+INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/axi_10g_ethernet_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet' (8#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/axi_10g_ethernet_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'udp_ip_inst'. This will prevent further optimization [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:181]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mac_subsystem'. This will prevent further optimization [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:250]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'nolabel_line162'. This will prevent further optimization [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:162]
+INFO: [Synth 8-6155] done synthesizing module 'udp_test' (9#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:32]
+WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_bresp[1]
+WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_bresp[0]
+WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_rresp[1]
+WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_rresp[0]
+WARNING: [Synth 8-3331] design udp_read_write_ctrl has unconnected port udp_rx_axis_tusr
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 936.891 ; gain = 243.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 936.891 ; gain = 243.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 936.891 ; gain = 243.844
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc] for cell 'mac_subsystem'
+Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc] for cell 'mac_subsystem'
+Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/udp_ip_0/udp_ip_0_in_context.xdc] for cell 'udp_ip_inst'
+Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/udp_ip_0/udp_ip_0_in_context.xdc] for cell 'udp_ip_inst'
+Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc] for cell 'clk'
+Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc] for cell 'clk'
+Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axis_fifo/axis_fifo/axis_fifo_in_context.xdc] for cell 'nolabel_line162/udp_axis_fifo'
+Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axis_fifo/axis_fifo/axis_fifo_in_context.xdc] for cell 'nolabel_line162/udp_axis_fifo'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1057.629 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.304 . Memory (MB): peak = 1057.629 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_subsystem' at clock pin 'areset_datapathclk_out' is different from the actual clock period '6.400', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'nolabel_line162/udp_axis_fifo' at clock pin 'clk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sfp_refclkn. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sfp_refclkn. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for sfp_refclkp. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sfp_refclkp. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 7).
+Applied set_property DONT_TOUCH = true for mac_subsystem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for udp_ip_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for nolabel_line162/udp_axis_fifo. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'udp_read_write_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'axi_state_reg' in module 'axi_10g_ethernet_0_axi_lite_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'mdio_access_sm_reg' in module 'axi_10g_ethernet_0_axi_lite_sm'
+INFO: [Synth 8-5587] ROM size for "start_mdio" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+                   SPEED |                              100 |                              100
+                LOOPBACK |                              010 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'udp_read_write_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0010 |                               00
+                SET_DATA |                             1000 |                               01
+                    INIT |                             0100 |                               10
+                    POLL |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mdio_access_sm_reg' using encoding 'one-hot' in module 'axi_10g_ethernet_0_axi_lite_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 STARTUP |                             0000 |                            00000
+            RESET_MAC_RX |                             0001 |                            00010
+            RESET_MAC_TX |                             0010 |                            00001
+             MDIO_ADDR_1 |                             0011 |                            00111
+     MDIO_READ_PCS_RESET |                             0100 |                            01100
+MDIO_READ_PCS_RESET_POLL |                             0101 |                            01101
+MDIO_READ_PCS_RESET_READ |                             0110 |                            01110
+        MDIO_RESET_CHECK |                             0111 |                            01111
+             MDIO_ADDR_2 |                             1000 |                            01000
+                 MDIO_WR |                             1001 |                            00110
+               MDIO_RD_1 |                             1010 |                            00101
+               MDIO_ADDR |                             1011 |                            00011
+                 MDIO_RD |                             1100 |                            00100
+         MDIO_POLL_CHECK |                             1101 |                            01001
+         MDIO_CHECK_DATA |                             1110 |                            01010
+             CONFIG_DONE |                             1111 |                            01011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_state_reg' using encoding 'sequential' in module 'axi_10g_ethernet_0_axi_lite_sm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               17 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+	  16 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 6     
+	   2 Input     10 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	  16 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	  16 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	  16 Input      1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_10g_ethernet_0_sync_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
+Module ax_debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module udp_read_write_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module axi_10g_ethernet_0_axi_lite_sm 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               17 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	  16 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 6     
+	   2 Input     10 Bit        Muxes := 1     
+	  16 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	  16 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_bresp[1]
+WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_bresp[0]
+WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_rresp[1]
+WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_rresp[0]
+WARNING: [Synth 8-3331] design udp_read_write_ctrl has unconnected port udp_rx_axis_tusr
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_reg_addr_reg[0]' (FDRE) to 'mac_config/mdio_reg_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_reg_addr_reg[2]' (FDRE) to 'mac_config/mdio_reg_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_reg_addr_reg[3]' (FDRE) to 'mac_config/mdio_reg_addr_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_config/\mdio_reg_addr_reg[4] )
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[11]' (FDRE) to 'mac_config/addr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[12]' (FDRE) to 'mac_config/addr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[13]' (FDRE) to 'mac_config/addr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[14]' (FDRE) to 'mac_config/addr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[15]' (FDRE) to 'mac_config/addr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[16]' (FDRE) to 'mac_config/addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[0]' (FDRE) to 'mac_config/axi_wr_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[1]' (FDRE) to 'mac_config/axi_wr_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[2]' (FDRE) to 'mac_config/axi_wr_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[3]' (FDRE) to 'mac_config/axi_wr_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[4]' (FDRE) to 'mac_config/axi_wr_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[7]' (FDRE) to 'mac_config/axi_wr_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[8]' (FDRE) to 'mac_config/axi_wr_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[9]' (FDRE) to 'mac_config/axi_wr_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[10]' (FDRE) to 'mac_config/axi_wr_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[11]' (FDRE) to 'mac_config/axi_wr_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[12]' (FDRE) to 'mac_config/axi_wr_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[16]' (FDRE) to 'mac_config/axi_wr_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[17]' (FDRE) to 'mac_config/axi_wr_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[18]' (FDRE) to 'mac_config/axi_wr_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[19]' (FDRE) to 'mac_config/axi_wr_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[20]' (FDRE) to 'mac_config/axi_wr_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[21]' (FDRE) to 'mac_config/axi_wr_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[22]' (FDRE) to 'mac_config/axi_wr_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[24]' (FDRE) to 'mac_config/axi_wr_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[25]' (FDRE) to 'mac_config/axi_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[28]' (FDRE) to 'mac_config/axi_wr_data_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_config/\axi_wr_data_reg[29] )
+INFO: [Synth 8-3886] merging instance 'mac_config/axi_wr_data_reg[30]' (FDRE) to 'mac_config/axi_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[0]' (FDRE) to 'mac_config/addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[1]' (FDRE) to 'mac_config/addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[4]' (FDRE) to 'mac_config/addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[5]' (FDRE) to 'mac_config/addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[6]' (FDRE) to 'mac_config/addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/addr_reg[7]' (FDRE) to 'mac_config/addr_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_config/\addr_reg[9] )
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_araddr_reg[0]' (FDRE) to 'mac_config/s_axi_araddr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_araddr_reg[1]' (FDRE) to 'mac_config/s_axi_araddr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_araddr_reg[4]' (FDRE) to 'mac_config/s_axi_araddr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_araddr_reg[5]' (FDRE) to 'mac_config/s_axi_araddr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_araddr_reg[6]' (FDRE) to 'mac_config/s_axi_araddr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_araddr_reg[7]' (FDRE) to 'mac_config/s_axi_araddr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[0]' (FDE) to 'mac_config/mdio_wr_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[1]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[2]' (FDE) to 'mac_config/mdio_wr_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[3]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[4]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[7]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[8]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[9]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[10]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[12]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[16]' (FDE) to 'mac_config/mdio_wr_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[18]' (FDE) to 'mac_config/mdio_wr_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[19]' (FDE) to 'mac_config/mdio_wr_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[21]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[22]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[24]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[25]' (FDE) to 'mac_config/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[28]' (FDE) to 'mac_config/mdio_wr_data_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_config/\mdio_wr_data_reg[29] )
+INFO: [Synth 8-3886] merging instance 'mac_config/mdio_wr_data_reg[30]' (FDE) to 'mac_config/mdio_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_wdata_reg[0]' (FDRE) to 'mac_config/s_axi_wdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_wdata_reg[2]' (FDRE) to 'mac_config/s_axi_wdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_wdata_reg[16]' (FDRE) to 'mac_config/s_axi_wdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_wdata_reg[18]' (FDRE) to 'mac_config/s_axi_wdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_wdata_reg[19]' (FDRE) to 'mac_config/s_axi_wdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_wdata_reg[28]' (FDRE) to 'mac_config/s_axi_wdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_wdata_reg[30]' (FDRE) to 'mac_config/s_axi_wdata_reg[31]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/areset_datapathclk_out' to pin 'mac_subsystem/bbstub_areset_datapathclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/coreclk_out' to pin 'mac_subsystem/bbstub_coreclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/gtrxreset_out' to pin 'mac_subsystem/bbstub_gtrxreset_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/gttxreset_out' to pin 'mac_subsystem/bbstub_gttxreset_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[0]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[0]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[10]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[10]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[11]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[11]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[12]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[12]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[13]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[13]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[14]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[14]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[15]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[15]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[16]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[16]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[17]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[17]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[18]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[18]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[19]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[19]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[1]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[1]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[20]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[20]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[21]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[21]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[22]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[22]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[23]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[23]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[24]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[24]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[25]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[25]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[26]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[26]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[27]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[27]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[28]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[28]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[29]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[29]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[2]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[2]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[30]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[30]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[31]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[31]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[32]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[32]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[33]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[33]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[34]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[34]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[35]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[35]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[36]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[36]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[37]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[37]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[38]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[38]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[39]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[39]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[3]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[3]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[40]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[40]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[41]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[41]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[42]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[42]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[43]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[43]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[44]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[44]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[45]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[45]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[46]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[46]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[47]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[47]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[48]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[48]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[49]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[49]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[4]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[4]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[50]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[50]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[51]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[51]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[52]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[52]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[53]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[53]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[54]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[54]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[55]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[55]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[56]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[56]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[57]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[57]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[58]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[58]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[59]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[59]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[5]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[5]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[60]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[60]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[61]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[61]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[62]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[62]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[63]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[63]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[6]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[6]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[7]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[7]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[8]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[8]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tdata[9]' to pin '{mac_subsystem/bbstub_m_axis_rx_tdata[9]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tkeep[0]' to pin '{mac_subsystem/bbstub_m_axis_rx_tkeep[0]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tkeep[1]' to pin '{mac_subsystem/bbstub_m_axis_rx_tkeep[1]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tkeep[2]' to pin '{mac_subsystem/bbstub_m_axis_rx_tkeep[2]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tkeep[3]' to pin '{mac_subsystem/bbstub_m_axis_rx_tkeep[3]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tkeep[4]' to pin '{mac_subsystem/bbstub_m_axis_rx_tkeep[4]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tkeep[5]' to pin '{mac_subsystem/bbstub_m_axis_rx_tkeep[5]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tkeep[6]' to pin '{mac_subsystem/bbstub_m_axis_rx_tkeep[6]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tkeep[7]' to pin '{mac_subsystem/bbstub_m_axis_rx_tkeep[7]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tlast' to pin 'mac_subsystem/bbstub_m_axis_rx_tlast/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tuser' to pin 'mac_subsystem/bbstub_m_axis_rx_tuser/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/m_axis_rx_tvalid' to pin 'mac_subsystem/bbstub_m_axis_rx_tvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/pcspma_status[0]' to pin '{mac_subsystem/bbstub_pcspma_status[0]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/pcspma_status[1]' to pin '{mac_subsystem/bbstub_pcspma_status[1]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/pcspma_status[2]' to pin '{mac_subsystem/bbstub_pcspma_status[2]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/pcspma_status[3]' to pin '{mac_subsystem/bbstub_pcspma_status[3]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/pcspma_status[4]' to pin '{mac_subsystem/bbstub_pcspma_status[4]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/pcspma_status[5]' to pin '{mac_subsystem/bbstub_pcspma_status[5]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/pcspma_status[6]' to pin '{mac_subsystem/bbstub_pcspma_status[6]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/pcspma_status[7]' to pin '{mac_subsystem/bbstub_pcspma_status[7]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/qplllock_out' to pin 'mac_subsystem/bbstub_qplllock_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/qplloutclk_out' to pin 'mac_subsystem/bbstub_qplloutclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/qplloutrefclk_out' to pin 'mac_subsystem/bbstub_qplloutrefclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/reset_counter_done_out' to pin 'mac_subsystem/bbstub_reset_counter_done_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/resetdone_out' to pin 'mac_subsystem/bbstub_resetdone_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/rx_statistics_valid' to pin 'mac_subsystem/bbstub_rx_statistics_valid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/rx_statistics_vector[0]' to pin '{mac_subsystem/bbstub_rx_statistics_vector[0]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/rx_statistics_vector[10]' to pin '{mac_subsystem/bbstub_rx_statistics_vector[10]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/rx_statistics_vector[11]' to pin '{mac_subsystem/bbstub_rx_statistics_vector[11]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/rx_statistics_vector[12]' to pin '{mac_subsystem/bbstub_rx_statistics_vector[12]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/rx_statistics_vector[13]' to pin '{mac_subsystem/bbstub_rx_statistics_vector[13]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/rx_statistics_vector[14]' to pin '{mac_subsystem/bbstub_rx_statistics_vector[14]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/rx_statistics_vector[15]' to pin '{mac_subsystem/bbstub_rx_statistics_vector[15]/O}'
+INFO: [Common 17-14] Message 'Synth 8-5578' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5819] Moved 202 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |axis_fifo        |         1|
+|2     |clk_gen          |         1|
+|3     |udp_ip_0         |         1|
+|4     |axi_10g_ethernet |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |axi_10g_ethernet |     1|
+|2     |axis_fifo        |     1|
+|3     |clk_gen          |     1|
+|4     |udp_ip_0         |     1|
+|5     |CARRY4           |    12|
+|6     |LUT1             |     7|
+|7     |LUT2             |    20|
+|8     |LUT3             |    58|
+|9     |LUT4             |    38|
+|10    |LUT5             |   105|
+|11    |LUT6             |    57|
+|12    |FDCE             |    35|
+|13    |FDPE             |    12|
+|14    |FDRE             |   125|
+|15    |FDSE             |     2|
+|16    |IBUF             |     4|
+|17    |OBUF             |     7|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+------------------+--------------------------------+------+
+|      |Instance          |Module                          |Cells |
++------+------------------+--------------------------------+------+
+|1     |top               |                                |   912|
+|2     |  nolabel_line162 |udp_read_write_ctrl             |   300|
+|3     |    key_debounce  |ax_debounce                     |    94|
+|4     |  mac_config      |axi_10g_ethernet_0_axi_lite_sm  |   227|
+|5     |  axis_reset_gen  |axi_10g_ethernet_0_sync_reset   |     9|
+|6     |  s_axi_reset_gen |axi_10g_ethernet_0_sync_reset_0 |    10|
++------+------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1075.656 ; gain = 243.844
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1090.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+264 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1090.215 ; gain = 703.641
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1090.215 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/udp_test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file udp_test_utilization_synth.rpt -pb udp_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 13 19:28:13 2024...

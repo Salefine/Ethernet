@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 13 16:46:45 2024
+# Process ID: 21072
+# Current directory: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/axis_fifo_synth_1
+# Command line: vivado.exe -log axis_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_fifo.tcl
+# Log file: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/axis_fifo_synth_1/axis_fifo.vds
+# Journal file: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/axis_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source axis_fifo.tcl -notrace

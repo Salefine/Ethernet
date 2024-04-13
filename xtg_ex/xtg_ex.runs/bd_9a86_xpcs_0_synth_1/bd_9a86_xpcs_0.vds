@@ -1,0 +1,849 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 13 19:24:38 2024
+# Process ID: 22476
+# Current directory: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1
+# Command line: vivado.exe -log bd_9a86_xpcs_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_9a86_xpcs_0.tcl
+# Log file: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1/bd_9a86_xpcs_0.vds
+# Journal file: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bd_9a86_xpcs_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/xilinx_prj/xilinx_Etherent/alinx_10g_udp/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tools/xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top bd_9a86_xpcs_0 -part xc7k325tffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18396 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 867.059 ; gain = 176.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_support' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_support.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_gt_common' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_gt_common.v:58]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter QPLL_FBDIV_TOP bound to: 66 - type: integer 
+	Parameter QPLL_FBDIV_IN bound to: 10'b0101000000 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'GTXE2_COMMON' [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:21947]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000001000000000000000000000000000001000000000000 
+	Parameter COMMON_CFG bound to: 0 - type: integer 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_QPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter QPLL_CFG bound to: 27'b000011010000000000110000001 
+	Parameter QPLL_CLKOUT_CFG bound to: 4'b0000 
+	Parameter QPLL_COARSE_FREQ_OVRD bound to: 6'b010000 
+	Parameter QPLL_COARSE_FREQ_OVRD_EN bound to: 1'b0 
+	Parameter QPLL_CP bound to: 10'b0000011111 
+	Parameter QPLL_CP_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_DMONITOR_SEL bound to: 1'b0 
+	Parameter QPLL_FBDIV bound to: 10'b0101000000 
+	Parameter QPLL_FBDIV_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b0 
+	Parameter QPLL_INIT_CFG bound to: 24'b000000000000000000000110 
+	Parameter QPLL_LOCK_CFG bound to: 16'b0010000111101000 
+	Parameter QPLL_LPF bound to: 4'b1111 
+	Parameter QPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'GTXE2_COMMON' (1#1) [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:21947]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_gt_common' (2#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_gt_common.v:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_shared_clock_and_reset' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_shared_clock_and_reset.v:59]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (3#1) [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33009]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (4#1) [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33009]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (5#1) [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_ff_synchronizer_rst' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer_rst.v:61]
+	Parameter C_NUM_SYNC_REGS bound to: 5 - type: integer 
+	Parameter C_RVAL bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer_rst.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer_rst.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_ff_synchronizer_rst' (6#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_ff_synchronizer_rst__parameterized0' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer_rst.v:61]
+	Parameter C_NUM_SYNC_REGS bound to: 5 - type: integer 
+	Parameter C_RVAL bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_ff_synchronizer_rst__parameterized0' (6#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_shared_clock_and_reset' (7#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_shared_clock_and_reset.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_block' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_block.v:59]
+	Parameter MASTER_WATCHDOG_TIMER_RESET bound to: 29'b00110111111000010010110100000 
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "yes" *) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_block.v:205]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "yes" *) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_block.v:207]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_local_clock_and_reset' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_local_clock_and_reset.v:58]
+	Parameter RXRESETTIME_NOM bound to: 24'b000000000000011000011011 
+	Parameter RXRESETTIME_MAX bound to: 24'b000100011010010010100110 
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_sim_speedup_controller' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_sim_speedup_controller.v:61]
+	Parameter SYNTH_VALUE bound to: 24'b000100011010010010100110 
+	Parameter SIM_VALUE bound to: 24'b000000000000011000011011 
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39008]
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (8#1) [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39008]
+INFO: [Synth 8-6157] synthesizing module 'LDCE' [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:38721]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_G_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'LDCE' (9#1) [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:38721]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_sim_speedup_controller' (10#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_sim_speedup_controller.v:61]
+INFO: [Synth 8-6157] synthesizing module 'BUFH' [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1311]
+INFO: [Synth 8-6155] done synthesizing module 'BUFH' (11#1) [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1311]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_ff_synchronizer_rst__parameterized1' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer_rst.v:61]
+	Parameter C_NUM_SYNC_REGS bound to: 7 - type: integer 
+	Parameter C_RVAL bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_ff_synchronizer_rst__parameterized1' (11#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_ff_synchronizer' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer.v:59]
+	Parameter C_NUM_SYNC_REGS bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer.v:68]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_ff_synchronizer' (12#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ff_synchronizer.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_local_clock_and_reset' (13#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_local_clock_and_reset.v:58]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:42771]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (16#1) [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:42771]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_cable_pull_logic' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_cable_pull_logic.v:59]
+	Parameter CABLE_PULL_WATCHDOG_RESET bound to: 20'b00100000000000000000 
+	Parameter CABLE_UNPULL_WATCHDOG_RESET bound to: 20'b00100000000000000000 
+	Parameter GEARBOXSLIP_IGNORE_COUNT bound to: 4'b1111 
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_cable_pull_logic' (58#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_cable_pull_logic.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_gtwizard_10gbaser_multi_GT' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_gtwizard_10gbaser_multi_gt.v:52]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter RX_DFE_KL_CFG2_IN bound to: 806439084 - type: integer 
+	Parameter PMA_RSV_IN bound to: 1994880 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bd_9a86_xpcs_0_gtwizard_10gbaser_GT' [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_gtwizard_10gbaser_gt.v:55]
+	Parameter GT_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter RX_DFE_KL_CFG2_IN bound to: 806439084 - type: integer 
+	Parameter PMA_RSV_IN bound to: 1994880 - type: integer 
+	Parameter PCS_RSVD_ATTR_IN bound to: 48'b000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'GTXE2_CHANNEL' [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:21274]
+	Parameter ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter ALIGN_COMMA_ENABLE bound to: 10'b0001111111 
+	Parameter ALIGN_COMMA_WORD bound to: 1 - type: integer 
+	Parameter ALIGN_MCOMMA_DET bound to: FALSE - type: string 
+	Parameter ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter ALIGN_PCOMMA_DET bound to: FALSE - type: string 
+	Parameter ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter CBCC_DATA_SOURCE_SEL bound to: DECODED - type: string 
+	Parameter CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter CHAN_BOND_MAX_SKEW bound to: 1 - type: integer 
+	Parameter CHAN_BOND_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CLK_CORRECT_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter CLK_COR_MAX_LAT bound to: 19 - type: integer 
+	Parameter CLK_COR_MIN_LAT bound to: 15 - type: integer 
+	Parameter CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter CLK_COR_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CPLL_CFG bound to: 24'b101111000000011111011100 
+	Parameter CPLL_FBDIV bound to: 4 - type: integer 
+	Parameter CPLL_FBDIV_45 bound to: 5 - type: integer 
+	Parameter CPLL_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter CPLL_LOCK_CFG bound to: 16'b0000000111101000 
+	Parameter CPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter DEC_MCOMMA_DETECT bound to: FALSE - type: string 
+	Parameter DEC_PCOMMA_DETECT bound to: FALSE - type: string 
+	Parameter DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter DMONITOR_CFG bound to: 24'b000000000000101000000000 
+	Parameter ES_CONTROL bound to: 6'b000000 
+	Parameter ES_ERRDET_EN bound to: FALSE - type: string 
+	Parameter ES_EYE_SCAN_EN bound to: TRUE - type: string 
+	Parameter ES_HORZ_OFFSET bound to: 12'b000000000000 
+	Parameter ES_PMA_CFG bound to: 10'b0000000000 
+	Parameter ES_PRESCALE bound to: 5'b00000 
+	Parameter ES_QUALIFIER bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_QUAL_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_SDATA_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_VERT_OFFSET bound to: 9'b000000000 
+	Parameter FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GEARBOX_MODE bound to: 3'b001 
+	Parameter IS_CPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXPHDLYTSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter OUTREFCLK_SEL_INV bound to: 2'b11 
+	Parameter PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter PCS_RSVD_ATTR bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter PD_TRANS_TIME_NONE_P2 bound to: 8'b00011001 
+	Parameter PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter PMA_RSV bound to: 1994880 - type: integer 
+	Parameter PMA_RSV2 bound to: 16'b0010000001010000 
+	Parameter PMA_RSV3 bound to: 2'b00 
+	Parameter PMA_RSV4 bound to: 0 - type: integer 
+	Parameter RXBUFRESET_TIME bound to: 5'b00001 
+	Parameter RXBUF_ADDR_MODE bound to: FAST - type: string 
+	Parameter RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter RXBUF_EN bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_OVFLW bound to: 61 - type: integer 
+	Parameter RXBUF_THRESH_OVRD bound to: FALSE - type: string 
+	Parameter RXBUF_THRESH_UNDFLW bound to: 4 - type: integer 
+	Parameter RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter RXCDR_CFG bound to: 72'b000010110000000000000000001000111111111100010000010000000000000000100000 
+	Parameter RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXCDR_LOCK_CFG bound to: 6'b010101 
+	Parameter RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXDFELPMRESET_TIME bound to: 7'b0001111 
+	Parameter RXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter RXDLY_LCFG bound to: 9'b000110000 
+	Parameter RXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter RXGEARBOX_EN bound to: TRUE - type: string 
+	Parameter RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter RXLPM_HF_CFG bound to: 14'b00000011110000 
+	Parameter RXLPM_LF_CFG bound to: 14'b00000011110000 
+	Parameter RXOOB_CFG bound to: 7'b0000110 
+	Parameter RXOUT_DIV bound to: 1 - type: integer 
+	Parameter RXPCSRESET_TIME bound to: 5'b00001 
+	Parameter RXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter RXPH_CFG bound to: 24'b000000000000000000000000 
+	Parameter RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter RXPMARESET_TIME bound to: 5'b00011 
+	Parameter RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter RXSLIDE_MODE bound to: OFF - type: string 
+	Parameter RX_BIAS_CFG bound to: 12'b000000000100 
+	Parameter RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter RX_CLK25_DIV bound to: 7 - type: integer 
+	Parameter RX_CLKMUX_PD bound to: 1'b1 
+	Parameter RX_CM_SEL bound to: 2'b11 
+	Parameter RX_CM_TRIM bound to: 3'b010 
+	Parameter RX_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RX_DDI_SEL bound to: 6'b000000 
+	Parameter RX_DEBUG_CFG bound to: 12'b000000000000 
+	Parameter RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter RX_DFE_GAIN_CFG bound to: 23'b00000100000111111101010 
+	Parameter RX_DFE_H2_CFG bound to: 12'b000000000000 
+	Parameter RX_DFE_H3_CFG bound to: 12'b000001000000 
+	Parameter RX_DFE_H4_CFG bound to: 11'b00011110000 
+	Parameter RX_DFE_H5_CFG bound to: 11'b00011100000 
+	Parameter RX_DFE_KL_CFG bound to: 13'b0000011111110 
+	Parameter RX_DFE_KL_CFG2 bound to: 806439084 - type: integer 
+	Parameter RX_DFE_LPM_CFG bound to: 16'b0000100101010100 
+	Parameter RX_DFE_LPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RX_DFE_UT_CFG bound to: 17'b10001111000000000 
+	Parameter RX_DFE_VP_CFG bound to: 17'b00011111100000011 
+	Parameter RX_DFE_XYD_CFG bound to: 13'b0000000000000 
+	Parameter RX_DISPERR_SEQ_MATCH bound to: TRUE - type: string 
+	Parameter RX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter RX_OS_CFG bound to: 13'b0000010000000 
+	Parameter RX_SIG_VALID_DLY bound to: 10 - type: integer 
+	Parameter RX_XCLK_SEL bound to: RXREC - type: string 
+	Parameter SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter SATA_BURST_SEQ_LEN bound to: 4'b1111 
+	Parameter SATA_BURST_VAL bound to: 3'b100 
+	Parameter SATA_CPLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter SATA_EIDLE_VAL bound to: 3'b100 
+	Parameter SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter SHOW_REALIGN_COMMA bound to: TRUE - type: string 
+	Parameter SIM_CPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_TX_EIDLE_DRIVE_LEVEL bound to: X - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+	Parameter TERM_RCAL_CFG bound to: 5'b10000 
+	Parameter TERM_RCAL_OVRD bound to: 1'b0 
+	Parameter TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter TST_RSV bound to: 0 - type: integer 
+	Parameter TXBUF_EN bound to: TRUE - type: string 
+	Parameter TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter TXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter TXDLY_LCFG bound to: 9'b000110000 
+	Parameter TXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter TXGEARBOX_EN bound to: TRUE - type: string 
+	Parameter TXOUT_DIV bound to: 1 - type: integer 
+	Parameter TXPCSRESET_TIME bound to: 5'b00001 
+	Parameter TXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter TXPH_CFG bound to: 16'b0000011110000000 
+	Parameter TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter TXPMARESET_TIME bound to: 5'b00001 
+	Parameter TX_CLK25_DIV bound to: 7 - type: integer 
+	Parameter TX_CLKMUX_PD bound to: 1'b1 
+	Parameter TX_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter TX_DEEMPH0 bound to: 5'b00000 
+	Parameter TX_DEEMPH1 bound to: 5'b00000 
+	Parameter TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter TX_EIDLE_ASSERT_DELAY bound to: 3'b110 
+	Parameter TX_EIDLE_DEASSERT_DELAY bound to: 3'b100 
+	Parameter TX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter TX_MARGIN_FULL_0 bound to: 7'b1001110 
+	Parameter TX_MARGIN_FULL_1 bound to: 7'b1001001 
+	Parameter TX_MARGIN_FULL_2 bound to: 7'b1000101 
+	Parameter TX_MARGIN_FULL_3 bound to: 7'b1000010 
+	Parameter TX_MARGIN_FULL_4 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter TX_MARGIN_LOW_1 bound to: 7'b1000100 
+	Parameter TX_MARGIN_LOW_2 bound to: 7'b1000010 
+	Parameter TX_MARGIN_LOW_3 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter TX_PREDRIVER_MODE bound to: 1'b0 
+	Parameter TX_QPI_STATUS_EN bound to: 1'b0 
+	Parameter TX_RXDETECT_CFG bound to: 14'b01100000110010 
+	Parameter TX_RXDETECT_REF bound to: 3'b100 
+	Parameter TX_XCLK_SEL bound to: TXOUT - type: string 
+	Parameter UCODEER_CLR bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'GTXE2_CHANNEL' (59#1) [D:/tools/xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:21274]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_gtwizard_10gbaser_GT' (60#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_gtwizard_10gbaser_gt.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_gtwizard_10gbaser_multi_GT' (61#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_gtwizard_10gbaser_multi_gt.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_block' (62#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_block.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0_support' (63#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_support.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'bd_9a86_xpcs_0' (64#1) [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.v:60]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_drp_ipif has unconnected port reset
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized10 has unconnected port re
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized10 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized10 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized10 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized10 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized9 has unconnected port re
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized9 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized9 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[15]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[14]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[13]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[12]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[11]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[10]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[9]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[8]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized8 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized7 has unconnected port re
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized7 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized7 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized6 has unconnected port re
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized6 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized6 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized5 has unconnected port re
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized5 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized5 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port d[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port d[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port d[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port d[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port d[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port d[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port d[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized4 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized3 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized3 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized3 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized3 has unconnected port d[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized3 has unconnected port d[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized3 has unconnected port d[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized3 has unconnected port d[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized3 has unconnected port d[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized3 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized2 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized2 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized2 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized2 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized1 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized1 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized1 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized1 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized0 has unconnected port re
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized0 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized0 has unconnected port backdoor_we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register__parameterized0 has unconnected port backdoor_d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register has unconnected port re
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_g_register has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port areset_clk156
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pma_loopback_config
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pma_low_power_mode_config
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pma_reset_config
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port global_transmit_disable_config
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_low_power_mode_config
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_loopback_config
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_reset_config
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[57]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[56]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[55]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[54]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[53]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[52]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[51]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[50]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[49]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[48]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[47]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[46]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[45]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[44]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[43]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[42]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[41]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[40]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[39]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_15_common_ieee_registers has unconnected port pcs_test_pattern_seedA_config[38]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 968.551 ; gain = 278.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 968.551 ; gain = 278.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 968.551 ; gain = 278.293
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc] for cell 'inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc:54]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc:56]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc:58]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc:61]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc:63]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc:65]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc:68]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of [filter [all_fanout -flat -endpoints_only -from [get_pins -filter NAME=~*/Q -of_objects [get_cells -hierarchical -filter {NAME =~ *rxratecounter_i*rxusrclk2_en156*}]]] {NAME =~ *WE}]'. [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc:70]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc:71]
+Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_9a86_xpcs_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_9a86_xpcs_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0_clocks.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1122.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  MUXCY_L => MUXCY: 44 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1123.496 ; gain = 1.266
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1123.496 ; gain = 433.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1123.496 ; gain = 433.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1/dont_touch.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1123.496 ; gain = 433.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_15_idle_delete'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_15_tx_pcs_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_15_rx_block_lock_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_15_rx_ber_mon_fsm'
+INFO: [Synth 8-5546] ROM "mcp1_rx_64_ctrl_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "DecodeWord" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord0" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord1" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord2" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord3" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord4" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord5" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord6" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_15_rx_pcs_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_15_mdio_interface'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_15_drp_ipif'
+INFO: [Synth 8-5587] ROM size for "gt_txd_mux" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "gt_txc_mux" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                STRAIGHT |                              000 |                              000
+                 DELETE3 |                              001 |                              010
+                 DELETE1 |                              010 |                              001
+                 TWISTED |                              011 |                              100
+        POSSIBLE_DELETE4 |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_15_idle_delete'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 TX_INIT |                              000 |                              000
+                    TX_E |                              001 |                              100
+                    TX_C |                              010 |                              001
+                    TX_D |                              011 |                              010
+                    TX_T |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_15_tx_pcs_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               LOCK_INIT |                               00 |                               00
+               RESET_CNT |                               01 |                               01
+   TEST_VALID_INVALID_SH |                               10 |                               10
+                    SLIP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_15_rx_block_lock_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             BER_MT_INIT |                              000 |                              000
+             START_TIMER |                              001 |                              001
+             BER_TEST_SH |                              010 |                              010
+              BER_BAD_SH |                              011 |                              011
+                  HI_BER |                              100 |                              100
+                GOOD_BER |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_15_rx_ber_mon_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_INIT |                              000 |                              000
+                    RX_E |                              001 |                              100
+                    RX_T |                              010 |                              011
+                    RX_C |                              011 |                              001
+                    RX_D |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_15_rx_pcs_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                       0000010000 |                             0000
+                PREAMBLE |                       0000100000 |                             0001
+                   START |                       0000001000 |                             0010
+                OPCODE_1 |                       0000000001 |                             0011
+                OPCODE_2 |                       0000000010 |                             0100
+                LD_PRTAD |                       0000000100 |                             0101
+                LD_DEVAD |                       1000000000 |                             0110
+                    TA_1 |                       0001000000 |                             0111
+                    TA_2 |                       0010000000 |                             1000
+               ADDR_DATA |                       0100000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ten_gig_eth_pcs_pma_v6_0_15_mdio_interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                     REQ |                               01 |                               01
+                     GNT |                               10 |                               10
+                    GNT1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_15_drp_ipif'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1123.496 ; gain = 433.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "rddata1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rx_pcs_i/rx_decoder_i/" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_pcs_i/rx_decoder_i/" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord0" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord1" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord2" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord3" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord4" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord5" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord6" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "rx_pcs_i/rx_decoder_i/mcp1_rx_64_ctrl_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "gt_txc_mux" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "gt_txd_mux" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[3]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[2]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[4]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[5]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[8]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[7]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[9]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[6]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core /\ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst /management_inst/\ieee_registers_i/common_reg_block/reg_3_8_11/q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core /\ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst /management_inst/\ieee_registers_i/common_reg_block/reg_1_8_10/q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[0]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[1]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[2]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[0]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[1]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[2]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[3]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1123.496 ; gain = 433.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 76 of d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc. [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/bd_0/ip/ip_1/synth/bd_9a86_xpcs_0.xdc:76]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:35 . Memory (MB): peak = 1123.496 ; gain = 433.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:41 . Memory (MB): peak = 1237.523 ; gain = 547.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/G_7SERIES_TXFIFO.txratefifo_i/asynch_fifo_i/rd_nextgray_reg[0]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/G_7SERIES_TXFIFO.txratefifo_i/asynch_fifo_i/rd_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/G_7SERIES_TXFIFO.txratefifo_i/asynch_fifo_i/wr_nextgray_reg[0]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/G_7SERIES_TXFIFO.txratefifo_i/asynch_fifo_i/wr_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_nextgray_reg[0]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_nextgray_reg[0]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_reg[1]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 1238.570 ; gain = 548.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5778] max_fanout handling on net \ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rxusrclk2_en156  is sub-optimal because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-4618] Found max_fanout attribute set to 50 on net \ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rxusrclk2_en156 . Fanout reduced from 697 to 155 by creating 11 replicas.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 1238.570 ; gain = 548.312
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 1238.570 ; gain = 548.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:45 . Memory (MB): peak = 1238.570 ; gain = 548.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:45 . Memory (MB): peak = 1238.570 ; gain = 548.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:45 . Memory (MB): peak = 1238.570 ; gain = 548.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:45 . Memory (MB): peak = 1238.570 ; gain = 548.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     2|
+|2     |BUFH          |     1|
+|3     |CARRY4        |    66|
+|4     |GTXE2_CHANNEL |     1|
+|5     |GTXE2_COMMON  |     1|
+|6     |IBUFDS_GTE2   |     1|
+|7     |LUT1          |   117|
+|8     |LUT2          |   386|
+|9     |LUT3          |   471|
+|10    |LUT4          |   434|
+|11    |LUT5          |   370|
+|12    |LUT6          |   985|
+|13    |MUXCY_L       |    44|
+|14    |MUXF7         |     2|
+|15    |RAM32M        |    24|
+|16    |FDCE          |    21|
+|17    |FDPE          |    77|
+|18    |FDRE          |  3008|
+|19    |FDSE          |   212|
+|20    |LDCE          |     1|
+|21    |IBUF          |     2|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:45 . Memory (MB): peak = 1238.570 ; gain = 548.312
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1749 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:42 . Memory (MB): peak = 1238.570 ; gain = 393.367
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:45 . Memory (MB): peak = 1238.570 ; gain = 548.312
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 136 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1255.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 40 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 16 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+133 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1255.469 ; gain = 867.445
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1255.469 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1/bd_9a86_xpcs_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_9a86_xpcs_0, cache-ID = 1dd9ac475730bbcc
+INFO: [Coretcl 2-1174] Renamed 160 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1255.469 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/bd_9a86_xpcs_0_synth_1/bd_9a86_xpcs_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_9a86_xpcs_0_utilization_synth.rpt -pb bd_9a86_xpcs_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 13 19:25:37 2024...
