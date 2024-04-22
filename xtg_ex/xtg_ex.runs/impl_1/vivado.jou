@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 15 15:31:56 2024
+# Process ID: 624
+# Current directory: E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/impl_1
+# Command line: vivado.exe -log udp_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source udp_test.tcl -notrace
+# Log file: E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/impl_1/udp_test.vdi
+# Journal file: E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source udp_test.tcl -notrace

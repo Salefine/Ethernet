@@ -1,3 +1,6 @@
+xpm_cdc.sv,systemverilog,xil_defaultlib,D:/tools/xilinx_2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/drivers/udp_ip_v1_0/src"
+xpm_memory.sv,systemverilog,xil_defaultlib,D:/tools/xilinx_2019/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/drivers/udp_ip_v1_0/src"
+xpm_VCOMP.vhd,vhdl,xpm,D:/tools/xilinx_2019/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/drivers/udp_ip_v1_0/src"
 alinx_udp_ip.vp,verilog,xil_defaultlib,../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/src/alinx_udp_ip.vp,incdir="../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/drivers/udp_ip_v1_0/src"
 arp_cache.vp,verilog,xil_defaultlib,../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/src/rx/arp_cache.vp,incdir="../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/drivers/udp_ip_v1_0/src"
 arp_rx.vp,verilog,xil_defaultlib,../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/src/rx/arp_rx.vp,incdir="../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/drivers/udp_ip_v1_0/src"

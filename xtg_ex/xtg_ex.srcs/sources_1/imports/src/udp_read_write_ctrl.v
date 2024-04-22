@@ -121,6 +121,7 @@ always @(*)
          begin
           if (speed_sel)
             next_state <= SPEED ;
+
 		  else
 		  begin
 			if (empty)

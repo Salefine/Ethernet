@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="clk_gen_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1712997930">
   <File Type="PA-TCL" Name="clk_gen.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="clk_gen_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="clk_gen_reports.tcl"/>
   <File Type="RDS-RDS" Name="clk_gen.vds"/>
   <File Type="RDS-UTIL" Name="clk_gen_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="clk_gen_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="clk_gen.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="clk_gen_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="clk_gen_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_gen">
     <File Path="$PSRCDIR/sources_1/ip/clk_gen/clk_gen.xci">
       <FileInfo>
@@ -42,9 +39,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

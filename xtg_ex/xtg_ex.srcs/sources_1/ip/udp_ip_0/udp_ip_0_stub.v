@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sat Apr 13 16:36:00 2024
-// Host        : westlife running 64-bit major release  (build 9200)
+// Date        : Mon Apr 15 09:57:49 2024
+// Host        : weslie running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/udp_ip_0_stub.v
+//               e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/udp_ip_0_stub.v
 // Design      : udp_ip_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7k325tffg900-2

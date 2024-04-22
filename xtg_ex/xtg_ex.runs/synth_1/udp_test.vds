@@ -2,80 +2,80 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Apr 13 19:27:46 2024
-# Process ID: 17528
-# Current directory: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1
+# Start of session at: Mon Apr 15 15:31:30 2024
+# Process ID: 10676
+# Current directory: E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1
 # Command line: vivado.exe -log udp_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source udp_test.tcl
-# Log file: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/udp_test.vds
-# Journal file: D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1\vivado.jou
+# Log file: E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1/udp_test.vds
+# Journal file: E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source udp_test.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/xilinx_prj/xilinx_Etherent/alinx_10g_udp/ip_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tools/xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/xilinx_ETH/eth_lab1/Ethernet/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tools/xilinx_2019/Vivado/2019.1/data/ip'.
 Command: synth_design -top udp_test -part xc7k325tffg900-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18312 
+INFO: Helper process launched with PID 3412 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 869.766 ; gain = 176.719
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 871.965 ; gain = 177.910
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'udp_test' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:32]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:73]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:74]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:75]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:76]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:77]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:79]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:80]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:81]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:82]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:83]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:86]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:87]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:88]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:89]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:90]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:92]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:93]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:94]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:95]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:96]
-INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_sync_reset' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:62]
-INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:70]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:70]
-INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:72]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:72]
-INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:74]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:74]
-INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:76]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:76]
-INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:78]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:78]
-INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:80]
-INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:80]
-INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_sync_reset' (1#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:62]
-INFO: [Synth 8-6157] synthesizing module 'clk_gen' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/clk_gen_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (2#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/clk_gen_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'udp_read_write_ctrl' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_read_write_ctrl.v:33]
+INFO: [Synth 8-6157] synthesizing module 'udp_test' [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:32]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:73]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:74]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:75]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:76]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:77]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:79]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:80]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:81]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:82]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:83]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:86]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:87]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:88]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:89]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:90]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:92]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:93]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:94]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:95]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:96]
+INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_sync_reset' [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:62]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:70]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:70]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:72]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:74]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:74]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:76]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:76]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:78]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:78]
+INFO: [Synth 8-5534] Detected attribute (* SHREG_EXTRACT = "NO" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:80]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_sync_reset' (1#1) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_sync_reset.v:62]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-10676-weslie/realtime/clk_gen_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (2#1) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-10676-weslie/realtime/clk_gen_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'udp_read_write_ctrl' [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_read_write_ctrl.v:33]
 	Parameter IDLE bound to: 3'b001 
 	Parameter LOOPBACK bound to: 3'b010 
 	Parameter SPEED bound to: 3'b100 
-INFO: [Synth 8-6157] synthesizing module 'axis_fifo' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/axis_fifo_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axis_fifo' (3#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/axis_fifo_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ax_debounce' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/ax_debounce.v:31]
+INFO: [Synth 8-6157] synthesizing module 'axis_fifo' [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-10676-weslie/realtime/axis_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axis_fifo' (3#1) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-10676-weslie/realtime/axis_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ax_debounce' [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/ax_debounce.v:31]
 	Parameter N bound to: 32 - type: integer 
 	Parameter FREQ bound to: 50 - type: integer 
 	Parameter MAX_TIME bound to: 20 - type: integer 
 	Parameter TIMER_MAX_VAL bound to: 1000000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'ax_debounce' (4#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/ax_debounce.v:31]
-INFO: [Synth 8-6155] done synthesizing module 'udp_read_write_ctrl' (5#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_read_write_ctrl.v:33]
-INFO: [Synth 8-6157] synthesizing module 'udp_ip_0' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/udp_ip_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'udp_ip_0' (6#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/udp_ip_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'ax_debounce' (4#1) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/ax_debounce.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'udp_read_write_ctrl' (5#1) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_read_write_ctrl.v:33]
+INFO: [Synth 8-6157] synthesizing module 'udp_ip_0' [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-10676-weslie/realtime/udp_ip_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'udp_ip_0' (6#1) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-10676-weslie/realtime/udp_ip_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:67]
 	Parameter STARTUP bound to: 0 - type: integer 
 	Parameter RESET_MAC_TX bound to: 1 - type: integer 
 	Parameter RESET_MAC_RX bound to: 2 - type: integer 
@@ -115,36 +115,36 @@ INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' [D:/xi
 	Parameter PHY_STATUS_REG bound to: 8'b00000001 
 	Parameter PHY_ABILITY_REG bound to: 8'b00000100 
 	Parameter PHY_1000BASET_CONTROL_REG bound to: 8'b00001001 
-INFO: [Synth 8-251] ** Note: Setting MDC Frequency to 10.4MHZ.... [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:327]
-INFO: [Synth 8-251] ** Note: Reseting MAC RX [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:335]
-INFO: [Synth 8-251] ** Note: Reseting MAC TX [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:350]
-INFO: [Synth 8-251] ** Note: Specified PCS control register address for 10GBASE-R [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:372]
-INFO: [Synth 8-251] ** Note: Issuing PCS reset [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:375]
-INFO: [Synth 8-251] ** Note: Set BASE-R control into PCS default [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:380]
-INFO: [Synth 8-251] ** Note: PCS RESET POLL [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:428]
-INFO: [Synth 8-251] ** Note: PCS RESET is cleared [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:430]
-INFO: [Synth 8-251] ** Note: Specified PCS control register address for 10GBASE-R [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:444]
-INFO: [Synth 8-251] ** Note: Set BASE-R control into PCS loopback  [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:448]
-INFO: [Synth 8-251] ** Note: Read PCS control [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:488]
-INFO: [Synth 8-251] ** Note: Specified status register 1 address for 10GBASE-R [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:511]
-INFO: [Synth 8-251] ** Note: Reading status register  [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:524]
-INFO: [Synth 8-251] ** Note: MDIO_POLL_CHECK [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:535]
-INFO: [Synth 8-251] ** Note: CONFIG_DONE, BASE-R is in lock [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:554]
-WARNING: [Synth 8-6014] Unused sequential element prev_axi_state_reg was removed.  [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:288]
-INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' (7#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:67]
-INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet' [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/axi_10g_ethernet_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet' (8#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-17528-westlife/realtime/axi_10g_ethernet_stub.v:6]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'udp_ip_inst'. This will prevent further optimization [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:181]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mac_subsystem'. This will prevent further optimization [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:250]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'nolabel_line162'. This will prevent further optimization [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:162]
-INFO: [Synth 8-6155] done synthesizing module 'udp_test' (9#1) [D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:32]
+INFO: [Synth 8-251] ** Note: Setting MDC Frequency to 10.4MHZ.... [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:327]
+INFO: [Synth 8-251] ** Note: Reseting MAC RX [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:335]
+INFO: [Synth 8-251] ** Note: Reseting MAC TX [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:350]
+INFO: [Synth 8-251] ** Note: Specified PCS control register address for 10GBASE-R [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:372]
+INFO: [Synth 8-251] ** Note: Issuing PCS reset [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:375]
+INFO: [Synth 8-251] ** Note: Set BASE-R control into PCS default [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:380]
+INFO: [Synth 8-251] ** Note: PCS RESET POLL [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:428]
+INFO: [Synth 8-251] ** Note: PCS RESET is cleared [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:430]
+INFO: [Synth 8-251] ** Note: Specified PCS control register address for 10GBASE-R [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:444]
+INFO: [Synth 8-251] ** Note: Set BASE-R control into PCS loopback  [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:448]
+INFO: [Synth 8-251] ** Note: Read PCS control [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:488]
+INFO: [Synth 8-251] ** Note: Specified status register 1 address for 10GBASE-R [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:511]
+INFO: [Synth 8-251] ** Note: Reading status register  [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:524]
+INFO: [Synth 8-251] ** Note: MDIO_POLL_CHECK [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:535]
+INFO: [Synth 8-251] ** Note: CONFIG_DONE, BASE-R is in lock [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:554]
+WARNING: [Synth 8-6014] Unused sequential element prev_axi_state_reg was removed.  [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:288]
+INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' (7#1) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/axi_10g_ethernet_0_axi_lite_sm.v:67]
+INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet' [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-10676-weslie/realtime/axi_10g_ethernet_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet' (8#1) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1/.Xil/Vivado-10676-weslie/realtime/axi_10g_ethernet_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'udp_ip_inst'. This will prevent further optimization [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:181]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mac_subsystem'. This will prevent further optimization [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:250]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'udp_ctrl'. This will prevent further optimization [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:161]
+INFO: [Synth 8-6155] done synthesizing module 'udp_test' (9#1) [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/imports/src/udp_test.v:32]
 WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_bresp[1]
 WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_bresp[0]
 WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_rresp[1]
 WARNING: [Synth 8-3331] design axi_10g_ethernet_0_axi_lite_sm has unconnected port s_axi_rresp[0]
 WARNING: [Synth 8-3331] design udp_read_write_ctrl has unconnected port udp_rx_axis_tusr
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 936.891 ; gain = 243.844
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 938.738 ; gain = 244.684
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -157,59 +157,83 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 936.891 ; gain = 243.844
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 938.738 ; gain = 244.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 936.891 ; gain = 243.844
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 938.738 ; gain = 244.684
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc] for cell 'mac_subsystem'
-Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc] for cell 'mac_subsystem'
-Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/udp_ip_0/udp_ip_0_in_context.xdc] for cell 'udp_ip_inst'
-Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/udp_ip_0/udp_ip_0_in_context.xdc] for cell 'udp_ip_inst'
-Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc] for cell 'clk'
-Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc] for cell 'clk'
-Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axis_fifo/axis_fifo/axis_fifo_in_context.xdc] for cell 'nolabel_line162/udp_axis_fifo'
-Finished Parsing XDC File [d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axis_fifo/axis_fifo/axis_fifo_in_context.xdc] for cell 'nolabel_line162/udp_axis_fifo'
+Parsing XDC File [e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc] for cell 'mac_subsystem'
+Finished Parsing XDC File [e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc] for cell 'mac_subsystem'
+Parsing XDC File [e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc] for cell 'clk'
+Finished Parsing XDC File [e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc] for cell 'clk'
+Parsing XDC File [e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/axis_fifo/axis_fifo/axis_fifo_in_context.xdc] for cell 'udp_ctrl/udp_axis_fifo'
+Finished Parsing XDC File [e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/axis_fifo/axis_fifo/axis_fifo_in_context.xdc] for cell 'udp_ctrl/udp_axis_fifo'
+Parsing XDC File [e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/udp_ip_0/udp_ip_0_in_context.xdc] for cell 'udp_ip_inst'
+Finished Parsing XDC File [e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/udp_ip_0/udp_ip_0/udp_ip_0_in_context.xdc] for cell 'udp_ip_inst'
+Parsing XDC File [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/physical.xdc]
+Finished Parsing XDC File [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/physical.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/physical.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/udp_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/udp_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK'. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:1]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:1]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK]'. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK'. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:2]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:2]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK]'. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:2]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'clk/inst/mmcm_adv_inst/CLKOUT0'. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:4]
+WARNING: [Vivado 12-627] No clocks matched 'mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK'. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:5]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:5]
+WARNING: [Vivado 12-627] No clocks matched 'mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK'. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:5]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:5]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:6]
+WARNING: [Vivado 12-508] No pins matched 'clk/inst/mmcm_adv_inst/CLKOUT0'. [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc:7]
+Finished Parsing XDC File [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/udp_test_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/constrs_1/new/timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/udp_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/udp_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1057.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1072.621 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.304 . Memory (MB): peak = 1057.629 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1072.621 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_subsystem' at clock pin 'areset_datapathclk_out' is different from the actual clock period '6.400', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'nolabel_line162/udp_axis_fifo' at clock pin 'clk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'udp_ctrl/udp_axis_fifo' at clock pin 'clk' is different from the actual clock period '6.400', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sfp_refclkn. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 202).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sfp_refclkn. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 203).
-Applied set_property IO_BUFFER_TYPE = NONE for sfp_refclkp. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 204).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sfp_refclkp. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 205).
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 5).
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 6).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  d:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for sfp_refclkn. (constraint file  e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sfp_refclkn. (constraint file  e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for sfp_refclkp. (constraint file  e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sfp_refclkp. (constraint file  e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/axi_10g_ethernet/axi_10g_ethernet/axi_10g_ethernet_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_n. (constraint file  e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_p. (constraint file  e:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.srcs/sources_1/ip/clk_gen/clk_gen/clk_gen_in_context.xdc, line 7).
 Applied set_property DONT_TOUCH = true for mac_subsystem. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for udp_ip_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for clk. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for nolabel_line162/udp_axis_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for udp_ctrl/udp_axis_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for udp_ip_inst. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'udp_read_write_ctrl'
 INFO: [Synth 8-802] inferred FSM for state register 'axi_state_reg' in module 'axi_10g_ethernet_0_axi_lite_sm'
@@ -255,7 +279,7 @@ MDIO_READ_PCS_RESET_READ |                             0110 |                   
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'axi_state_reg' using encoding 'sequential' in module 'axi_10g_ethernet_0_axi_lite_sm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -464,7 +488,7 @@ INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_wdata_reg[19]' (FDRE) to
 INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_wdata_reg[28]' (FDRE) to 'mac_config/s_axi_wdata_reg[31]'
 INFO: [Synth 8-3886] merging instance 'mac_config/s_axi_wdata_reg[30]' (FDRE) to 'mac_config/s_axi_wdata_reg[31]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -578,13 +602,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'mac_subsystem/rx_statisti
 INFO: [Common 17-14] Message 'Synth 8-5578' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5819] Moved 202 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Timing Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -596,7 +620,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Technology Mapping : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -620,7 +644,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished IO Insertion : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -633,7 +657,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -645,25 +669,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -707,34 +731,36 @@ Report Instance Areas:
 |      |Instance          |Module                          |Cells |
 +------+------------------+--------------------------------+------+
 |1     |top               |                                |   912|
-|2     |  nolabel_line162 |udp_read_write_ctrl             |   300|
+|2     |  udp_ctrl        |udp_read_write_ctrl             |   300|
 |3     |    key_debounce  |ax_debounce                     |    94|
 |4     |  mac_config      |axi_10g_ethernet_0_axi_lite_sm  |   227|
 |5     |  axis_reset_gen  |axi_10g_ethernet_0_sync_reset   |     9|
 |6     |  s_axi_reset_gen |axi_10g_ethernet_0_sync_reset_0 |    10|
 +------+------------------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1081.168 ; gain = 387.113
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1075.656 ; gain = 243.844
-Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1075.656 ; gain = 382.609
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1081.168 ; gain = 244.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1081.168 ; gain = 387.113
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1090.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1083.102 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-264 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+270 Infos, 21 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1090.215 ; gain = 703.641
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1090.215 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1083.102 ; gain = 695.141
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1083.102 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1/udp_test.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1/udp_test.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file udp_test_utilization_synth.rpt -pb udp_test_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 13 19:28:13 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 15 15:31:49 2024...

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1713007664">
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1713166289">
   <File Type="PA-TCL" Name="udp_test.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="udp_test_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="udp_test_reports.tcl"/>
@@ -82,7 +82,20 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/physical.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/timing.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/physical.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -93,14 +106,12 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="clk_gen"/>
   <BlockFileSet Type="BlockSrcs" Name="axi_10g_ethernet"/>
-  <BlockFileSet Type="BlockSrcs" Name="udp_ip_0"/>
   <BlockFileSet Type="BlockSrcs" Name="axis_fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_9a86_xpcs_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="udp_ip_0"/>
 </GenRun>

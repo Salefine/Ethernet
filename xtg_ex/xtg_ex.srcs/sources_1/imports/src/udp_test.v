@@ -158,7 +158,7 @@ clk_gen clk
 
 
 /* Instantiate udp read and write control module */
-udp_read_write_ctrl
+udp_read_write_ctrl  udp_ctrl
 	(
 	.axis_aclk                  (coreclk),
 	.axis_aresetn			    (axis_aresetn),

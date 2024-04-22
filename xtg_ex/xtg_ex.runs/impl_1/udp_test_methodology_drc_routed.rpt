@@ -1,0 +1,1198 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Apr 15 15:33:59 2024
+| Host         : weslie running 64-bit major release  (build 9200)
+| Command      : report_methodology -file udp_test_methodology_drc_routed.rpt -pb udp_test_methodology_drc_routed.pb -rpx udp_test_methodology_drc_routed.rpx
+| Design       : udp_test
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 231
++-----------+------------------+-------------------------------------------------+------------+
+| Rule      | Severity         | Description                                     | Violations |
++-----------+------------------+-------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks  | 1          |
+| TIMING-7  | Critical Warning | No common node between related clocks           | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                    | 18         |
+| PDRC-190  | Warning          | Suboptimally placed synchronized register chain | 13         |
+| SYNTH-6   | Warning          | Timing of a block RAM might be sub-optimal      | 8          |
+| TIMING-9  | Warning          | Unknown CDC Logic                               | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                   | 7          |
+| TIMING-24 | Warning          | Overridden Max delay datapath only              | 33         |
+| TIMING-46 | Warning          | Multicycle path with tied CE pins               | 149        |
++-----------+------------------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks sfp_refclkp and clk_out1_clk_gen are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sfp_refclkp] -to [get_clocks clk_out1_clk_gen]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks sfp_refclkp and clk_out1_clk_gen are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sfp_refclkp] -to [get_clocks clk_out1_clk_gen]
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell axis_reset_gen/mac_subsystem_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) axis_reset_gen/reset_async0_reg/PRE, axis_reset_gen/reset_async1_reg/PRE, axis_reset_gen/reset_async2_reg/PRE, axis_reset_gen/reset_async3_reg/PRE, axis_reset_gen/reset_async4_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg[1]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[0]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[1]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[2]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[3]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[4]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_areset_sync_i/sync1_r_reg[0]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_areset_sync_i/sync1_r_reg[1]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_areset_sync_i/sync1_r_reg[2]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_areset_sync_i/sync1_r_reg[3]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_areset_sync_i/sync1_r_reg[4]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_areset_sync_i/sync1_r_reg[0]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_areset_sync_i/sync1_r_reg[1]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_areset_sync_i/sync1_r_reg[2]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_areset_sync_i/sync1_r_reg[3]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_areset_sync_i/sync1_r_reg[4]/PRE (the first 15 of 20 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTDO_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/control_block/USE_MAN.register_block/reset_async0_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_tx_rst/reset_async0_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_tx_rst/reset_async1_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_tx_rst/reset_async2_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_tx_rst/reset_async3_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_tx_rst/reset_async4_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/control_block/USE_MAN.register_block/reset_async0_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_rx_rst/reset_async0_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_rx_rst/reset_async1_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_rx_rst/reset_async2_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_rx_rst/reset_async3_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_rx_rst/reset_async4_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/CPU_RESET.sync_cpu_rst/reset_async0_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/CPU_RESET.sync_cpu_rst/reset_async0_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/CPU_RESET.sync_cpu_rst/reset_async1_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/CPU_RESET.sync_cpu_rst/reset_async2_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/CPU_RESET.sync_cpu_rst/reset_async3_reg/PRE, mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/CPU_RESET.sync_cpu_rst/reset_async4_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_areset_sync_i/sync1_r[4]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_reset_tx_sync_i/sync1_r_reg[0]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_reset_tx_sync_i/sync1_r_reg[1]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_reset_tx_sync_i/sync1_r_reg[2]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_reset_tx_sync_i/sync1_r_reg[3]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_reset_tx_sync_i/sync1_r_reg[4]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_areset_sync_i/sync1_r[4]_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_reset_rx_sync_i/sync1_r_reg[0]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_reset_rx_sync_i/sync1_r_reg[1]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_reset_rx_sync_i/sync1_r_reg[2]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_reset_rx_sync_i/sync1_r_reg[3]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/coreclk_reset_rx_sync_i/sync1_r_reg[4]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_reset_rx_tmp, with 2 or more inputs, drives asynchronous preset/clear pin(s) mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_reset_rx_sync_i/sync1_r_reg[0]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_reset_rx_sync_i/sync1_r_reg[1]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_reset_rx_sync_i/sync1_r_reg[2]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_reset_rx_sync_i/sync1_r_reg[3]/PRE, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/dclk_reset_rx_sync_i/sync1_r_reg[4]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/gt0_gttxreset_i_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_coreclk_sync_i/sync1_r_reg[0]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_coreclk_sync_i/sync1_r_reg[1]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_coreclk_sync_i/sync1_r_reg[2]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_coreclk_sync_i/sync1_r_reg[3]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_coreclk_sync_i/sync1_r_reg[4]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[0]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[1]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[2]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[3]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[4]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_txusrclk2_sync_i/sync1_r_reg[0]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_txusrclk2_sync_i/sync1_r_reg[1]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_txusrclk2_sync_i/sync1_r_reg[2]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_txusrclk2_sync_i/sync1_r_reg[3]/CLR, mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_txusrclk2_sync_i/sync1_r_reg[4]/CLR (the first 15 of 20 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell s_axi_reset_gen/reset_async0_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) s_axi_reset_gen/reset_async0_reg/PRE, s_axi_reset_gen/reset_async1_reg/PRE, s_axi_reset_gen/reset_async2_reg/PRE, s_axi_reset_gen/reset_async3_reg/PRE, s_axi_reset_gen/reset_async4_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell udp_ctrl/speed_cnt[0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) udp_ctrl/key_debounce/DFF1_reg/CLR, udp_ctrl/key_debounce/DFF2_reg/CLR, udp_ctrl/key_debounce/button_posedge_reg/CLR, udp_ctrl/key_debounce/q_reg_reg[0]/CLR, udp_ctrl/key_debounce/q_reg_reg[10]/CLR, udp_ctrl/key_debounce/q_reg_reg[11]/CLR, udp_ctrl/key_debounce/q_reg_reg[12]/CLR, udp_ctrl/key_debounce/q_reg_reg[13]/CLR, udp_ctrl/key_debounce/q_reg_reg[14]/CLR, udp_ctrl/key_debounce/q_reg_reg[15]/CLR, udp_ctrl/key_debounce/q_reg_reg[16]/CLR, udp_ctrl/key_debounce/q_reg_reg[17]/CLR, udp_ctrl/key_debounce/q_reg_reg[18]/CLR, udp_ctrl/key_debounce/q_reg_reg[19]/CLR, udp_ctrl/key_debounce/q_reg_reg[1]/CLR (the first 15 of 37 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell udp_ip_inst/inst/udp_ip_inst/frame_rx_top_inst/ip_rx_inst/rcv_state[0]_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/full_reg/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/raddr_reg[0]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/raddr_reg[1]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/raddr_reg[2]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/raddr_reg[3]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/raddr_reg[4]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/raddr_reg[5]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/raddr_reg[6]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/raddr_reg[7]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/waddr_reg[0]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/waddr_reg[1]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/waddr_reg[2]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/waddr_reg[3]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/waddr_reg[4]/CLR, udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/waddr_reg[5]/CLR (the first 15 of 66 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/ip_inst/ip_stream_inst/stream_byte_fifo/fifo_inst/empty2_carry__0_i_1__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/almost_full_reg/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/full_reg/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/raddr_reg[0]/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/raddr_reg[1]/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/raddr_reg[2]/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/raddr_reg[3]/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/raddr_reg[4]/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/waddr_reg[0]/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/waddr_reg[1]/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/waddr_reg[2]/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/waddr_reg[3]/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/waddr_reg[4]/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_tx_checksum/fifo_inst/empty_reg/PRE, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_length_fifo/fifo_inst/almost_full_reg/CLR, udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_length_fifo/fifo_inst/full_reg/CLR (the first 15 of 182 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X43Y263 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X44Y263 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X42Y263 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X39Y263 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X44Y267 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X44Y265 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X45Y267 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X38Y259 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X41Y259 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X42Y259 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/CPU_RESET.sync_cpu_rst/reset_sync0_reg in site SLICE_X105Y281 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/CPU_RESET.sync_cpu_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_rx_rst/reset_sync0_reg in site SLICE_X96Y266 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_rx_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_tx_rst/reset_sync0_reg in site SLICE_X92Y264 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell mac_subsystem/inst/xmac/inst/bd_9a86_xmac_0_core/reset_gen/sync_tx_rst/reset_sync1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/frame_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/frame_inst/pkg_fifo/fifo_inst/dpram_std/ram_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/ip_inst/ip_stream_inst/stream_data_fifo/fifo_inst/dpram_std/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance udp_ip_inst/inst/udp_ip_inst/frame_tx_top_inst/udp_inst/udp_data_fifo/fifo_inst/dpram_std/ram_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance udp_ip_inst/inst/udp_ip_inst/icmp_reply_inst/icmp_data_fifo/fifo_inst/dpram_std/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on push_button relative to clock(s) sfp_refclkp
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on rst_n relative to clock(s) mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK, sfp_refclkp
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to clock(s) sfp_refclkp
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on led[1] relative to clock(s) sfp_refclkp
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on led[2] relative to clock(s) sfp_refclkp
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on led[3] relative to clock(s) sfp_refclkp
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on sfp_tx_disable relative to clock(s) mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 89 in the Timing Constraints window in Vivado IDE) between clocks mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK and sfp_refclkp overrides a set_max_delay -datapath_only (position 64). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 89 in the Timing Constraints window in Vivado IDE) between clocks mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK and sfp_refclkp overrides a set_max_delay -datapath_only (position 71). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 89 in the Timing Constraints window in Vivado IDE) between clocks sfp_refclkp and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 63). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 89 in the Timing Constraints window in Vivado IDE) between clocks sfp_refclkp and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 65). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#5 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 89 in the Timing Constraints window in Vivado IDE) between clocks sfp_refclkp and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 71). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#6 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 89 in the Timing Constraints window in Vivado IDE) between clocks sfp_refclkp and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK overrides a set_max_delay -datapath_only (position 80). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#7 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 90 in the Timing Constraints window in Vivado IDE) between clocks mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK and sfp_refclkp overrides a set_max_delay -datapath_only (position 69). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#8 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 90 in the Timing Constraints window in Vivado IDE) between clocks sfp_refclkp and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK overrides a set_max_delay -datapath_only (position 68). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#9 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 90 in the Timing Constraints window in Vivado IDE) between clocks sfp_refclkp and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK overrides a set_max_delay -datapath_only (position 71). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#10 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 18). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#11 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 19). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#12 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 21). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#13 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 22). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#14 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 23). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#15 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 24). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#16 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 25). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#17 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 26). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#18 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 27). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#19 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 28). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#20 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 29). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#21 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 30). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#22 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 31). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#23 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 32). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#24 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 33). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#25 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 34). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#26 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 35). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#27 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 36). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#28 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 37). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#29 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 38). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#30 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 39). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#31 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 40). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#32 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 41). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#33 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 91 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_gen and sfp_refclkp overrides a set_max_delay -datapath_only (position 81). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-46#1 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/d1_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/d1b_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#2 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/d1b_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/d2_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#3 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/d2_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/d3_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#4 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/d3_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/d4_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#5 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/d4_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/q_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#6 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/coreclk_rxusrclk2_resets_resyncs_i/q_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rxreset_local_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#7 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync0_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync1_reg[0]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#8 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync0_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync1_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#9 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync0_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync1_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#10 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync0_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync1_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#11 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync0_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync1_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#12 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync1_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync2_reg[0]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#13 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync1_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync2_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#14 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync1_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync2_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#15 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync1_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync2_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#16 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync1_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync2_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#17 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync2_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync_reg[0]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#18 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync2_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#19 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync2_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#20 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync2_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#21 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync2_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rag_writesync_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#22 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk0_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk1_reg[0]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#23 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk0_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk1_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#24 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk0_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk1_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#25 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk0_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk1_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#26 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk0_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk1_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#27 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk1_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk2_reg[0]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#28 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk1_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk2_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#29 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk1_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk2_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#30 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk1_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk2_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#31 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk1_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk2_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#32 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk2_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk_reg[0]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#33 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk2_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#34 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk2_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#35 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk2_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#36 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk2_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/rd_lastgray_wrclk_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#37 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe0_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe1_reg[0]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#38 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe0_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe1_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#39 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe0_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe1_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#40 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe0_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe1_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#41 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe0_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe1_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#42 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe1_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe_reg[0]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#43 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe1_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#44 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe1_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#45 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe1_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#46 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe1_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/asynch_fifo_i/wr_addr_pipe_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#47 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/can_insert_wra_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/ebuff_gen.rx_elastic_buffer_i/rx_elastic_buffer_i/can_insert_wra2_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#48 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/norm_err_block_counter_i/mcp1_counter_1_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/norm_err_block_counter_i/psynch_1/dcapture_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#49 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/norm_err_block_counter_i/mcp1_counter_2_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/norm_err_block_counter_i/psynch_2/dcapture_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#50 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/norm_err_block_counter_i/mcp1_counter_3_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/norm_err_block_counter_i/psynch_3/dcapture_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#51 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_ber_counter_i/mcp1_counter_1_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_ber_counter_i/psynch_1/dcapture_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#52 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_ber_counter_i/mcp1_counter_2_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_ber_counter_i/psynch_2/dcapture_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#53 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_ber_counter_i/mcp1_counter_3_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_ber_counter_i/psynch_3/dcapture_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#54 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_pcs_fsm_i/b_lock_mod_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_pcs_fsm_i/b_lock_mod_r_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#55 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/synch_signal_ok/d1_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/synch_signal_ok/d1b_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#56 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/synch_signal_ok/d1b_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/synch_signal_ok/d2_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#57 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/synch_signal_ok/d2_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/synch_signal_ok/d3_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#58 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/synch_signal_ok/d3_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/synch_signal_ok/d4_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#59 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/synch_signal_ok/d4_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/synch_signal_ok/q_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#60 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rxreset_local_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rxreset_1_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#61 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rxreset_local_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rxreset_2_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#62 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rxreset_local_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rxreset_3_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#63 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rxreset_local_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rxreset_4_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#64 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rxreset_local_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rxreset_5_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#65 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rxreset_local_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rxreset_6_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#66 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/test_err_block_counter_i/mcp1_counter_1_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/test_err_block_counter_i/psynch_1/dcapture_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#67 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/test_err_block_counter_i/mcp1_counter_2_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/test_err_block_counter_i/psynch_2/dcapture_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#68 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/test_err_block_counter_i/mcp1_counter_3_reg/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/test_err_block_counter_i/psynch_3/dcapture_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#69 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#70 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#71 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#72 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#73 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/sync1_r_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/areset_rxusrclk2_sync_i/data_out_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#74 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/gtrxreset_rxusrclk2_sync_i/sync1_r_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/gtrxreset_rxusrclk2_sync_i/sync1_r_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#75 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/gtrxreset_rxusrclk2_sync_i/sync1_r_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/gtrxreset_rxusrclk2_sync_i/sync1_r_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#76 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/gtrxreset_rxusrclk2_sync_i/sync1_r_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/gtrxreset_rxusrclk2_sync_i/sync1_r_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#77 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/gtrxreset_rxusrclk2_sync_i/sync1_r_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/gtrxreset_rxusrclk2_sync_i/sync1_r_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#78 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/gtrxreset_rxusrclk2_sync_i/sync1_r_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/gtrxreset_rxusrclk2_sync_i/data_out_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#79 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/pma_resetout_rising_rxusrclk2_sync_i/sync1_r_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/pma_resetout_rising_rxusrclk2_sync_i/sync1_r_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#80 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/pma_resetout_rising_rxusrclk2_sync_i/sync1_r_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/pma_resetout_rising_rxusrclk2_sync_i/sync1_r_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#81 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/pma_resetout_rising_rxusrclk2_sync_i/sync1_r_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/pma_resetout_rising_rxusrclk2_sync_i/sync1_r_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#82 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/pma_resetout_rising_rxusrclk2_sync_i/sync1_r_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/pma_resetout_rising_rxusrclk2_sync_i/sync1_r_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#83 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/pma_resetout_rising_rxusrclk2_sync_i/sync1_r_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/pma_resetout_rising_rxusrclk2_sync_i/data_out_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#84 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/rxreset_rxusrclk2_sync_i/sync1_r_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/rxreset_rxusrclk2_sync_i/sync1_r_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#85 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/rxreset_rxusrclk2_sync_i/sync1_r_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/rxreset_rxusrclk2_sync_i/sync1_r_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#86 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/rxreset_rxusrclk2_sync_i/sync1_r_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/rxreset_rxusrclk2_sync_i/sync1_r_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#87 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/rxreset_rxusrclk2_sync_i/sync1_r_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/rxreset_rxusrclk2_sync_i/sync1_r_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#88 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/rxreset_rxusrclk2_sync_i/sync1_r_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_local_clock_reset_block/rxreset_rxusrclk2_sync_i/data_out_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#89 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_pull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_pull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#90 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_pull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_pull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#91 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_pull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_pull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#92 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_pull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_pull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#93 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_pull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_pull_reset_rising_rxusrclk2_sync_i/data_out_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#94 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_unpull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_unpull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#95 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_unpull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_unpull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#96 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_unpull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_unpull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#97 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_unpull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_unpull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#98 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_unpull_reset_rising_rxusrclk2_sync_i/sync1_r_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/cable_pull_logic_i/cable_unpull_reset_rising_rxusrclk2_sync_i/data_out_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#99 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_rxresetdone_i_reg_rxusrclk2_sync_i/sync1_r_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_rxresetdone_i_reg_rxusrclk2_sync_i/sync1_r_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#100 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_rxresetdone_i_reg_rxusrclk2_sync_i/sync1_r_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_rxresetdone_i_reg_rxusrclk2_sync_i/sync1_r_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#101 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_rxresetdone_i_reg_rxusrclk2_sync_i/sync1_r_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_rxresetdone_i_reg_rxusrclk2_sync_i/sync1_r_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#102 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_rxresetdone_i_reg_rxusrclk2_sync_i/sync1_r_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_rxresetdone_i_reg_rxusrclk2_sync_i/sync1_r_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#103 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_rxresetdone_i_reg_rxusrclk2_sync_i/sync1_r_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_rxresetdone_i_reg_rxusrclk2_sync_i/data_out_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#104 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxc_d1_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[0]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#105 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxc_d1_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#106 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxc_d1_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rxdatavalid_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#107 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxc_d1_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rxheadervalid_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#108 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#109 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[10]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[12]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#110 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[11]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[13]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#111 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[12]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[14]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#112 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[13]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[15]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#113 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[14]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[16]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#114 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[15]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[17]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#115 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[16]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[18]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#116 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[17]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[19]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#117 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[18]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[20]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#118 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[19]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[21]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#119 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#120 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[20]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[22]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#121 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[21]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[23]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#122 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[22]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[24]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#123 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[23]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[25]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#124 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[24]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[26]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#125 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[25]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[27]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#126 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[26]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[28]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#127 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[27]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[29]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#128 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[28]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[30]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#129 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[29]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[31]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#130 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#131 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[30]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[32]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#132 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[31]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[33]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#133 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[5]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#134 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[6]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#135 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[5]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[7]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#136 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[6]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[8]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#137 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[7]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[9]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#138 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[8]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[10]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#139 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt_rxd_d1_reg[9]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_9a86_xpcs_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rx_gt_reg[11]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#140 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#141 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#142 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#143 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#144 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/sync1_r_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/qplllock_rxusrclk2_sync_i/data_out_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#145 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/signal_detect_rxusrclk2_sync_i/sync1_r_reg[0]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/signal_detect_rxusrclk2_sync_i/sync1_r_reg[1]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#146 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/signal_detect_rxusrclk2_sync_i/sync1_r_reg[1]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/signal_detect_rxusrclk2_sync_i/sync1_r_reg[2]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#147 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/signal_detect_rxusrclk2_sync_i/sync1_r_reg[2]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/signal_detect_rxusrclk2_sync_i/sync1_r_reg[3]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#148 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/signal_detect_rxusrclk2_sync_i/sync1_r_reg[3]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/signal_detect_rxusrclk2_sync_i/sync1_r_reg[4]/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+TIMING-46#149 Warning
+Multicycle path with tied CE pins  
+One or more multicycle paths are defined between registers mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/signal_detect_rxusrclk2_sync_i/sync1_r_reg[4]/Q and mac_subsystem/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/signal_detect_rxusrclk2_sync_i/data_out_reg/D with a direct connection and the CE pins connected to VCC (see constraint position 92 in the Timing Constraint window in Vivado IDE).  This may result in an inaccurate path requirement.
+Related violations: <none>
+
+

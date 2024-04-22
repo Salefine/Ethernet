@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/tools/xilinx/SDK/2019.1/bin;D:/tools/xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;D:/tools/xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:D:/tools/xilinx/Vivado/2019.1/bin
+  PATH=D:/tools/xilinx_2019/SDK/2019.1/bin;D:/tools/xilinx_2019/Vivado/2019.1/ids_lite/ISE/bin/nt64;D:/tools/xilinx_2019/Vivado/2019.1/ids_lite/ISE/lib/nt64:D:/tools/xilinx_2019/Vivado/2019.1/bin
 else
-  PATH=D:/tools/xilinx/SDK/2019.1/bin;D:/tools/xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;D:/tools/xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:D:/tools/xilinx/Vivado/2019.1/bin:$PATH
+  PATH=D:/tools/xilinx_2019/SDK/2019.1/bin;D:/tools/xilinx_2019/Vivado/2019.1/ids_lite/ISE/bin/nt64;D:/tools/xilinx_2019/Vivado/2019.1/ids_lite/ISE/lib/nt64:D:/tools/xilinx_2019/Vivado/2019.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/xilinx_prj/xilinx_Etherent/xtg_ethernet_ex/xtg_ex/xtg_ex.runs/synth_1'
+HD_PWD='E:/xilinx_ETH/eth_lab1/Ethernet/xtg_ex/xtg_ex.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

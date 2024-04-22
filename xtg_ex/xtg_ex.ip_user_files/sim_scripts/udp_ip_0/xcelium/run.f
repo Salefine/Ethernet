@@ -1,3 +1,10 @@
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "D:/tools/xilinx_2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "D:/tools/xilinx_2019/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+-endlib
+-makelib xcelium_lib/xpm \
+  "D:/tools/xilinx_2019/Vivado/2019.1/data/ip/xpm/xpm_VCOMP.vhd" \
+-endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/src/alinx_udp_ip.vp" \
   "../../../../xtg_ex.srcs/sources_1/ip/udp_ip_0/src/rx/arp_cache.vp" \
