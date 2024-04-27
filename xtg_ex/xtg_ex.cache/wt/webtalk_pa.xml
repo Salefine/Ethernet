@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Apr 15 15:34:29 2024">
+<application name="pa" timeStamp="Sat Apr 27 13:46:27 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="a4531f22789e41c6ba374c4178a61621" type="ProjectID"/>
 <property name="ProjectIteration" value="8" type="ProjectIteration"/>
@@ -21,6 +21,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AutoConnectTarget" value="4" type="JavaHandler"/>
 <property name="CoreView" value="4" type="JavaHandler"/>
 <property name="CustomizeCore" value="9" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="4" type="JavaHandler"/>
 <property name="DebugWizardCmdHandler" value="1" type="JavaHandler"/>
 <property name="EditDelete" value="3" type="JavaHandler"/>
 <property name="EditProperties" value="3" type="JavaHandler"/>
@@ -29,7 +30,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenHardwareManager" value="4" type="JavaHandler"/>
 <property name="OpenIPExampleDesign" value="1" type="JavaHandler"/>
 <property name="OpenRecentTarget" value="2" type="JavaHandler"/>
-<property name="RecustomizeCore" value="16" type="JavaHandler"/>
+<property name="RecustomizeCore" value="18" type="JavaHandler"/>
 <property name="ReportClockInteraction" value="2" type="JavaHandler"/>
 <property name="ReportClockNetworks" value="1" type="JavaHandler"/>
 <property name="ReportTimingSummary" value="2" type="JavaHandler"/>
@@ -56,7 +57,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddRepositoryInfoDialog_OK" value="2" type="GuiHandlerData"/>
 <property name="BaseDialog_APPLY" value="1" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="1" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="50" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="51" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="7" type="GuiHandlerData"/>
 <property name="BaseReportTab_RERUN" value="7" type="GuiHandlerData"/>
 <property name="BoardChooser_BOARD_TABLE" value="2" type="GuiHandlerData"/>
@@ -75,7 +76,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditSetClockGroupsTablePanel_EDIT_SET_CLOCK_GROUPS_TABLE" value="1" type="GuiHandlerData"/>
 <property name="EditXdcPanel_EDIT_FROM_THRU_TO_TABLE" value="8" type="GuiHandlerData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="4" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="156" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="181" type="GuiHandlerData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="36" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="HCodeEditor_CLOSE" value="1" type="GuiHandlerData"/>
@@ -173,9 +174,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XdcTableEditorsPanel_REMOVE_SELECTED_ROW" value="1" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="62" type="GuiMode"/>
+<property name="GuiMode" value="86" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="54" type="TclMode"/>
+<property name="TclMode" value="74" type="TclMode"/>
 </item>
 </section>
 </application>
